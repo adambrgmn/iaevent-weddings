@@ -3,4 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
-{{ .Hugo.Generator }}
+
+<!-- Hugo info -->
+{{ printf "<!--Hugo Build Date: %s-->" hugo.BuildDate | safeHTML }}
+{{ printf "<!--Hugo Commit Hash: %s-->" hugo.CommitHash | safeHTML }}
+{{ hugo.Generator }}
