@@ -1,8 +1,10 @@
-{{ $css := resources.Get "css/app.css" | postCSS (dict "config" "postcss.config.js") | minify }}
-{{ $secureCss := $css | resources.Fingerprint "sha512" }}
-
+{{ $css := resources.Get "app.css" }} {{ if eq (getenv "HUGO_ENV") "production"
+}} {{ $secureCss := $css | minify | resources.Fingerprint "sha512" }}
 <link
   rel="stylesheet"
   href="{{ $secureCss.Permalink }}"
   integrity="{{ $secureCss.Data.Integrity }}"
 />
+{{ else }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" />
+{{ end }}
