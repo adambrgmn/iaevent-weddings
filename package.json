@@ -4,6 +4,7 @@
   "scripts": {
     "start:assets": "parcel watch src/app.ts -d assets --no-hmr --public-url .",
     "start:hugo": "hugo server",
+    "start:functions": "netlify-lambda serve src/lambda",
     "build": "yarn build:assets && yarn build:hugo",
     "build:assets": "parcel build src/app.ts -d assets --experimental-scope-hoisting --public-url .",
     "build:hugo": "hugo",
@@ -17,7 +18,11 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@types/aws-lambda": "^8.10.27",
     "@types/node": "^12.0.12",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
