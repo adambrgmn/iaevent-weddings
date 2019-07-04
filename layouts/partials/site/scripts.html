@@ -1,9 +1,10 @@
-{{ $js := resources.Get "app.js" }} {{ if eq (getenv "HUGO_ENV") "production" }}
-{{ $secureJs := $js | minify | resources.Fingerprint "sha512" }}
-<script
-  src="{{ $secureJs.Permalink }}"
-  integrity="{{ $secureJs.Data.Integrity }}"
-></script>
+{{ $js := resources.Get "app.js" }}
+{{ if eq (getenv "HUGO_ENV") "production" }}
+  {{ $secureJs := $js | minify | resources.Fingerprint "sha512" }}
+  <script
+    src="{{ $secureJs.Permalink }}"
+    integrity="{{ $secureJs.Data.Integrity }}"
+  ></script>
 {{ else }}
-<script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.Permalink }}"></script>
 {{ end }}
