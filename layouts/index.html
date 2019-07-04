@@ -1,0 +1,16 @@
+{{ define "title" }}
+  {{ .Title }}
+{{ end }}
+
+{{ define "header" }}
+  {{ partial "site/header.html" . }}
+  <div role="banner" style="width: 400px;">
+    {{ partial "site/logotype.svg" }}
+  </div>
+{{ end }}
+
+{{ define "main" }}
+  <div>
+    {{ .Content }}
+  </div>
+{{ end }}

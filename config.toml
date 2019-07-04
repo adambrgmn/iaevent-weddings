@@ -2,6 +2,10 @@ baseURL = "/"
 languageCode = "sv-SE"
 title = "Weddings by IA Event"
 
+defaultContentLanguage = "sv"
+defaultContentLanguageInSubdir = false
+
+enableEmoji = true
 enableRobotsTXT = true
 disableAliases = true
 

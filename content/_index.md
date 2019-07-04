@@ -1,5 +1,6 @@
 ---
-title: ""
-date: 2019-07-04T14:00:00Z
+title: 'Weddings by IA Event'
+date: 2019-07-04T00:00:00+02:00
 ---
 
+Index...

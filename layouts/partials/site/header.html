@@ -1,3 +1,29 @@
-<header class="site-header" role="banner">
-  <strong><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></strong>
+<header class="site-header">
+  <div>
+    <h1>
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </h1>
+  </div>
+
+  <nav>
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ $active := $currentPage.IsMenuCurrent "main" . }}
+        <li class="{{ if $active }}active{{ end }}">
+          <a href="{{ .URL }}">
+            {{ .Pre }}
+            <span>{{ .Name }}</span>
+            {{ .Post }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+
+  {{ with .Site.GetPage "/kontakt" }}
+    <div>
+      <a href="{{ .URL }}">Boka gratis konsultation</a>
+    </div>
+  {{ end }}
 </header>
