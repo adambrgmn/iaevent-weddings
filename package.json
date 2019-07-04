@@ -1,0 +1,27 @@
+{
+  "name": "@iaevent/weddings",
+  "private": true,
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo && npm run build:functions",
+    "build:functions": "netlify-lambda build assets/lambda",
+    "server": "hugo server"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.0",
+    "netlify-lambda": "^1.4.13",
+    "postcss-cli": "^6.1.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
