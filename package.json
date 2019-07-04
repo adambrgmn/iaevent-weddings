@@ -13,6 +13,7 @@
   "dependencies": {
     "@babel/runtime": "^7.5.0",
     "autoprefixer": "^9.6.0",
+    "lazysizes": "^5.1.0",
     "netlify-lambda": "^1.4.13",
     "postcss-cli": "^6.1.2",
     "react": "^16.8.6",

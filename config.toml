@@ -2,6 +2,8 @@ baseURL = "/"
 languageCode = "sv-SE"
 title = "Weddings by IA Event"
 
+staticDir = ["static", "assets"]
+
 defaultContentLanguage = "sv"
 defaultContentLanguageInSubdir = false
 
