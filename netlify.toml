@@ -1,17 +1,24 @@
 [build]
-  command = "hugo -b $URL && npm run build:functions"
+  command = "yarn build:assets && yarn build:hugo -b $URL && yarn build:functions"
   publish = "public"
   functions = "functions"
 
 [build.environment]
   HUGO_VERSION = "0.55.6"
-
-[context.production.environment]
+  API_BASE = "/.netlify/functions"
   HUGO_ENV = "production"
   NODE_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo -b $DEPLOY_PRIME_URL"
+  command = "yarn build:assets && yarn build:hugo -b $DEPLOY_PRIME_URL && yarn build:functions"
+
+[context.deploy-preview.environment]
+  HUGO_ENV = "staging"
+  NODE_ENV = "staging"
 
 [context.branch-deploy]
-  command = "hugo -b $DEPLOY_PRIME_URL"
+  command = "yarn build:assets && yarn build:hugo -b $DEPLOY_PRIME_URL && yarn build:functions"
+
+[context.branch-deploy.environment]
+  HUGO_ENV = "staging"
+  NODE_ENV = "staging"

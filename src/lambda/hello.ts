@@ -4,6 +4,10 @@ export async function handler(
 ): Promise<AWSLambda.APIGatewayProxyResult> {
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: 'hello world' }),
+    body: JSON.stringify({ message: 'hello world', env: process.env.NODE_ENV }),
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+    },
   };
 }
