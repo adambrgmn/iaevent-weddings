@@ -1,0 +1,20 @@
+<!--
+  critical.js is the javascript that is necessary early in tha page, in our case
+  we're talking about e.g. image lazyloading.
+  When in production mode we will inline the javascript in head.
+-->
+{{ $assets := resources.Get "assets.json" | unmarshal }}
+{{ with $assets }}
+  {{ $criticalJS := resources.Get .critical_js }}
+
+  {{ if eq (getenv "HUGO_ENV") "production" }}
+    {{ $secureJS := $criticalJS | minify | resources.Fingerprint "sha512" }}
+    <script
+      src="{{ $secureJS.Permalink }}"
+      integrity="{{ $secureJS.Data.Integrity }}"
+    ></script>
+  {{ else }}
+    <script src="{{ $criticalJS.Permalink }}" async></script>
+  {{ end }}
+{{ end }}
+<!-- Hello world -->

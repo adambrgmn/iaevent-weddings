@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
   <head>
-    {{ block "site/meta" . }}
+    {{ block "meta" . }}
       {{ partial "site/meta.html" . }}
     {{ end }}
 
@@ -15,9 +15,11 @@
       <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
     {{ end }}
 
-    {{ block "site/styles" . }}
+    {{ block "styles" . }}
       {{ partial "site/styles.html" . }}
     {{ end }}
+
+    {{ partial "site/scripts-head.html" . }}
   </head>
   <body>
     {{ block "header" . }}
@@ -32,7 +34,7 @@
       {{ partial "site/footer.html" . }}
     {{ end }}
 
-    {{ block "site/scripts" . }}
+    {{ block "scripts" . }}
       {{ partial "site/scripts.html" . }}
     {{ end }}
   </body>

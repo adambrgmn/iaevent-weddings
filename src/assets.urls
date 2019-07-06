@@ -1,0 +1,3 @@
+app_js: ./app.ts
+app_css: ./app.css
+critical_js: ./critical.ts

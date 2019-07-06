@@ -1,11 +1,10 @@
-{{ $css := resources.Get "app.css" }}
-{{ if eq (getenv "HUGO_ENV") "production" }}
-  {{ $secureCss := $css | minify | resources.Fingerprint "sha512" }}
-  <link
-    rel="stylesheet"
-    href="{{ $secureCss.Permalink }}"
-    integrity="{{ $secureCss.Data.Integrity }}"
-  />
-{{ else }}
-  <link rel="stylesheet" href="{{ $css.Permalink }}" />
+{{ $assets := resources.Get "assets.json" | unmarshal }}
+{{ with $assets }}
+  {{ $appCSS := resources.Get .app_css }}
+  {{ if eq (getenv "HUGO_ENV") "production" }}
+    {{ $secureCSS := $appCSS | minify | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" src="{{ $secureCSS.Permalink }}" />
+  {{ else }}
+    <link rel="stylesheet" href="{{ $appCSS.Permalink }}" />
+  {{ end }}
 {{ end }}

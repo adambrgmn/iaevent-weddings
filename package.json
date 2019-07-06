@@ -2,11 +2,11 @@
   "name": "@iaevent/weddings",
   "private": true,
   "scripts": {
-    "start:assets": "parcel watch src/app.ts -d assets --no-hmr",
+    "start:assets": "parcel watch src/assets.urls -d assets --no-hmr --public-url /",
     "start:hugo": "hugo server",
     "start:functions": "BABEL_ENV=functions netlify-lambda serve src/lambda",
     "build": "yarn build:assets && yarn build:hugo",
-    "build:assets": "parcel build src/app.ts -d assets",
+    "build:assets": "parcel build src/assets.urls -d assets --public-url /",
     "build:hugo": "hugo",
     "build:functions": "BABEL_ENV=functions netlify-lambda build src/lambda"
   },
@@ -43,6 +43,7 @@
     "husky": "^3.0.0",
     "lint-staged": "^9.0.2",
     "parcel-bundler": "^1.12.3",
+    "parcel-plugin-assets-list": "^1.7.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.6.0",
     "prettier": "^1.18.2",
