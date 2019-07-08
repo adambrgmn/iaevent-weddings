@@ -6,7 +6,9 @@
  * not.
  */
 function enableLazyLoadings() {
-  const elements = document.querySelectorAll<HTMLImageElement>('img.lazyload');
+  const elements = document.querySelectorAll<
+    HTMLImageElement | HTMLIFrameElement
+  >('img.lazyload,iframe.lazyload');
 
   if ('loading' in HTMLImageElement.prototype) {
     /**
@@ -25,7 +27,7 @@ function enableLazyLoadings() {
         el.src = el.dataset.src;
       }
     });
-  } else {
+  } else if (elements.length > 0) {
     /**
      * If native lazyload isn't supported we rely on the
      * [lazysizes](https://github.com/aFarkas/lazysizes) package to handle
@@ -43,7 +45,9 @@ function enableLazyLoadings() {
  *
  * @param {NodeListOf<HTMLImageElement>} elements
  */
-function lazysizeFallback(elements: NodeListOf<HTMLImageElement>) {
+function lazysizeFallback(
+  elements: NodeListOf<HTMLImageElement | HTMLIFrameElement>,
+) {
   elements.forEach(el => {
     if (el.dataset.src) el.src = el.dataset.src;
   });
