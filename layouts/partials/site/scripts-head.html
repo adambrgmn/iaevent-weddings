@@ -4,17 +4,15 @@
   When in production mode we will inline the javascript in head.
 -->
 {{ $assets := resources.Get "assets.json" | unmarshal }}
-{{ with $assets }}
-  {{ $criticalJS := resources.Get .critical_js }}
+{{ $criticalJS := index $assets "critical.js" | resources.Get }}
 
-  {{ if eq (getenv "HUGO_ENV") "production" }}
-    {{ $secureJS := $criticalJS | minify | resources.Fingerprint "sha512" }}
-    <script
-      src="{{ $secureJS.Permalink }}"
-      integrity="{{ $secureJS.Data.Integrity }}"
-    ></script>
-  {{ else }}
-    <script src="{{ $criticalJS.Permalink }}" async></script>
-  {{ end }}
+{{ if eq (getenv "HUGO_ENV") "production" }}
+  {{ $secureJS := $criticalJS | minify | resources.Fingerprint "sha512" }}
+  <script
+    src="{{ $secureJS.Permalink }}"
+    integrity="{{ $secureJS.Data.Integrity }}"
+  ></script>
+{{ else }}
+  <script src="{{ $criticalJS.Permalink }}"></script>
 {{ end }}
 <!-- Hello world -->

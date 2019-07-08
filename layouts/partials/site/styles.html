@@ -6,12 +6,17 @@
 />
 
 {{ $assets := resources.Get "assets.json" | unmarshal }}
-{{ with $assets }}
-  {{ $appCSS := resources.Get .app_css }}
-  {{ if eq (getenv "HUGO_ENV") "production" }}
-    {{ $secureCSS := $appCSS | minify | resources.Fingerprint "sha512" }}
-    <link rel="stylesheet" src="{{ $secureCSS.Permalink }}" />
-  {{ else }}
-    <link rel="stylesheet" href="{{ $appCSS.Permalink }}" />
-  {{ end }}
+{{ $appCSS := index $assets "app.css" | resources.Get }}
+{{ if eq (getenv "HUGO_ENV") "production" }}
+  {{ $secureCSS := $appCSS | minify | resources.Fingerprint "sha512" }}
+  <link
+    rel="stylesheet"
+    src="{{ $secureCSS.Permalink }}"
+    integrity="{{ $secureCSS.Data.Integrity }}"
+  />
+{{ else }}
+  <link
+    rel="stylesheet"
+    href="{{ $appCSS.Permalink }}"
+  />
 {{ end }}
