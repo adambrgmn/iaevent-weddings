@@ -1,3 +1,10 @@
+{{ $fonts := delimit .Site.Params.googleFonts "|" }}
+{{ $query := querify "family" $fonts "display" "swap" }}
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?{{ $query | safeURL }}"
+/>
+
 {{ $assets := resources.Get "assets.json" | unmarshal }}
 {{ with $assets }}
   {{ $appCSS := resources.Get .app_css }}
