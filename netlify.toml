@@ -10,15 +10,7 @@
   NODE_ENV = "production"
 
 [context.deploy-preview]
-  command = "yarn build:assets && yarn build:hugo -b $DEPLOY_PRIME_URL && yarn build:functions"
-
-[context.deploy-preview.environment]
-  HUGO_ENV = "staging"
-  NODE_ENV = "staging"
+  command = "yarn build:assets && yarn build:hugo -D -b $DEPLOY_PRIME_URL && yarn build:functions"
 
 [context.branch-deploy]
-  command = "yarn build:assets && yarn build:hugo -b $DEPLOY_PRIME_URL && yarn build:functions"
-
-[context.branch-deploy.environment]
-  HUGO_ENV = "staging"
-  NODE_ENV = "staging"
+  command = "yarn build:assets && yarn build:hugo -D -b $DEPLOY_PRIME_URL && yarn build:functions"
