@@ -14,11 +14,12 @@ disableAliases = true
 
 [params]
   description = "..."
-  disallow_search_engines = false # set robots.txt to disallow everything
+  disallowSearchEngines = false # set robots.txt to disallow everything
   googleFonts = [
     "Advent Pro",
     "Work Sans"
   ]
+  cloudinaryBase = "https://res.cloudinary.com/adambrgmn/image/upload/"
 
 # add redirects/headers
 [outputs]

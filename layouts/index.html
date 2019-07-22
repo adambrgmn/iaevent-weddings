@@ -4,13 +4,85 @@
 
 {{ define "header" }}
   {{ partial "site/header.html" . }}
-  <!-- <div role="banner" style="width: 400px;">
-    {{ partial "site/logotype.svg" }}
-  </div> -->
+
+  {{ with .Params.backgroundImage }}
+    {{ $base := $.Site.Params.cloudinaryBase }}
+    {{ $src := . }}
+
+    <style>
+      .jumbotron {
+        background-image: url("{{ print $base "c_fill,g_center,h_820,w_320/" $src }}")
+      }
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,h_1640,w_640/" $src }}")
+        }
+      }
+
+      /* SM */
+      @media (min-width: 640px) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_768/" $src }}")
+        }
+      }
+
+      @media (min-width: 640px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_1536/" $src }}")
+        }
+      }
+
+      /* MD */
+      @media (min-width: 768px) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_1024/" $src }}")
+        }
+      }
+
+      @media (min-width: 768px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_2048/" $src }}")
+        }
+      }
+
+      /* LG */
+      @media (min-width: 1024px) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_1280/" $src }}")
+        }
+      }
+
+      @media (min-width: 1024px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_2560/" $src }}")
+        }
+      }
+
+      /* LG */
+      @media (min-width: 1280px) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_1500/" $src }}")
+        }
+      }
+
+      @media (min-width: 1280px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
+        .jumbotron {
+          background-image: url("{{ print $base "c_fill,g_center,w_3000/" $src }}")
+        }
+      }
+    </style>
+    <div
+      role="banner"
+      class="jumbotron flex justify-center items-center w-full bg-center bg-cover"
+    >
+      <div class="w-1/2 md:w-1/4 text-white fill-current">
+        {{ partial "site/logotype.svg" . }}
+      </div>
+    </div>
+  {{ end }}
 {{ end }}
 
 {{ define "main" }}
-  <div>
-    {{ .Content }}
-  </div>
+  <div></div>
 {{ end }}
