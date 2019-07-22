@@ -3,16 +3,14 @@
   we're talking about e.g. image lazyloading.
   When in production mode we will inline the javascript in head.
 -->
-{{ $assets := resources.Get "assets.json" | unmarshal }}
-{{ $criticalJS := index $assets "critical.js" | resources.Get }}
 
-{{ if eq (getenv "HUGO_ENV") "production" }}
-  {{ $secureJS := $criticalJS | minify | resources.Fingerprint "sha512" }}
+{{ $assets := .Scratch.Get "assets" }}
+{{ range $assets }}
+  {{ if eq .name "critical.js" }}
   <script
-    src="{{ $secureJS.Permalink }}"
-    integrity="{{ $secureJS.Data.Integrity }}"
+    src="{{ .resource.Permalink }}"
+    {{ with .resource.Data }}integrity="{{ .Integrity }}"{{ end }}
+    async
   ></script>
-{{ else }}
-  <script src="{{ $criticalJS.Permalink }}"></script>
+  {{ end }}
 {{ end }}
-<!-- Hello world -->

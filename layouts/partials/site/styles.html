@@ -5,18 +5,13 @@
   href="https://fonts.googleapis.com/css?{{ $query | safeURL }}"
 />
 
-{{ $assets := resources.Get "assets.json" | unmarshal }}
-{{ $appCSS := index $assets "app.css" | resources.Get }}
-{{ if eq (getenv "HUGO_ENV") "production" }}
-  {{ $secureCSS := $appCSS | minify | resources.Fingerprint "sha512" }}
+{{ $assets := .Scratch.Get "assets" }}
+{{ range $assets }}
+  {{ if eq .name "app.css" }}
   <link
     rel="stylesheet"
-    src="{{ $secureCSS.Permalink }}"
-    integrity="{{ $secureCSS.Data.Integrity }}"
+    href="{{ .resource.Permalink }}"
+    {{ with .resource.Data }}integrity="{{ .Integrity }}"{{ end }}
   />
-{{ else }}
-  <link
-    rel="stylesheet"
-    href="{{ $appCSS.Permalink }}"
-  />
+  {{ end }}
 {{ end }}

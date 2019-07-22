@@ -1,29 +1,30 @@
-<header class="site-header">
-  <div>
-    <h1>
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+<header class="fixed w-screen flex items-center p-4 z-10">
+  <div class="h-6 mr-6 lowercase tracking-wide z-20">
+    <h1 class="font-sans" data-content-both="-">
+      <a href="{{ .Site.BaseURL }}">
+        {{ .Site.Title }}
+      </a>
     </h1>
   </div>
 
-  <nav>
-    <ul>
+  <button class="toggle-menu ml-auto z-20 md:hidden">
+    <span class="sr-only">Öppna meny</span>
+    <div class="toggle-menu-icon"></div>
+  </button>
+
+  <nav class="menu">
+    <ul class="flex flex-col items-center justify-center md:flex-row md:justify-start">
       {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        {{ $active := $currentPage.IsMenuCurrent "main" . }}
-        <li class="{{ if $active }}active{{ end }}">
-          <a href="{{ .URL }}">
-            {{ .Pre }}
-            <span>{{ .Name }}</span>
-            {{ .Post }}
-          </a>
-        </li>
+      {{ range.Site.Menus.main }}
+      {{ $active := $currentPage.IsMenuCurrent "main" . }}
+      <li class="my-4 md:my-0">
+        <a href="{{ .URL }}" class="menu-link {{ if $active }}menu-link-active{{ end }}">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          {{ .Post }}
+        </a>
+      </li>
       {{ end }}
     </ul>
   </nav>
-
-  {{ with .Site.GetPage "/kontakt" }}
-    <div>
-      <a href="{{ .Permalink }}">Boka gratis konsultation</a>
-    </div>
-  {{ end }}
 </header>

@@ -15,18 +15,17 @@
       <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
     {{ end }}
 
-    {{ block "styles" . }}
-      {{ partial "site/styles.html" . }}
-    {{ end }}
+    {{ partial "site/assets.html" . }}
 
+    {{ partial "site/styles.html" . }}
     {{ partial "site/scripts-head.html" . }}
   </head>
-  <body>
+  <body class="font-sans">
     {{ block "header" . }}
       {{ partial "site/header.html" . }}
     {{ end }}
     
-    <main class="site-main" role="main">
+    <main class="site-main z-0" role="main">
       {{ block "main" . }}{{ end }}
     </main>
 
@@ -34,8 +33,6 @@
       {{ partial "site/footer.html" . }}
     {{ end }}
 
-    {{ block "scripts" . }}
-      {{ partial "site/scripts.html" . }}
-    {{ end }}
+    {{ partial "site/scripts.html" . }}
   </body>
 </html>

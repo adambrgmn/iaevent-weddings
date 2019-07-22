@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "sv-SE"
-title = "Weddings by ia event"
+title = "Wedding by ia event"
 
 staticDir = ["static", "assets"]
 
@@ -17,7 +17,7 @@ disableAliases = true
   disallow_search_engines = false # set robots.txt to disallow everything
   googleFonts = [
     "Advent Pro",
-    "Roboto"
+    "Work Sans"
   ]
 
 # add redirects/headers

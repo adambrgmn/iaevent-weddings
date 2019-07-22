@@ -1,12 +1,10 @@
-{{ $assets := resources.Get "assets.json" | unmarshal }}
-{{ $appJS := index $assets "app.js" | resources.Get }}
-{{ if eq (getenv "HUGO_ENV") "production" }}
-  {{ $secureJS := $appJS | minify | resources.Fingerprint "sha512" }}
+{{ $assets := .Scratch.Get "assets" }}
+{{ range $assets }}
+  {{ if eq .name "app.js" }}
   <script
-    src="{{ $secureJS.Permalink }}"
-    integrity="{{ $secureJS.Data.Integrity }}"
+    src="{{ .resource.Permalink }}"
+    {{ with .resource.Data }}integrity="{{ .Integrity }}"{{ end }}
     async
   ></script>
-{{ else }}
-  <script src="{{ $appJS.Permalink }}" async></script>
+  {{ end }}
 {{ end }}

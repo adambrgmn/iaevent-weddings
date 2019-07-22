@@ -1,0 +1,108 @@
+/**
+ * Menu icon
+ */
+.toggle-menu {
+  @apply w-6 h-6 relative;
+}
+
+.toggle-menu-icon {
+  @apply w-full h-full relative;
+}
+
+.toggle-menu-icon::before,
+.toggle-menu-icon::after {
+  @apply bg-black;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-menu-icon::before {
+  top: calc((100% / 3) - 1px);
+}
+
+.toggle-menu-icon::after {
+  top: calc(((100% / 3) * 2) - 1px);
+}
+
+.toggle-menu:hover .toggle-menu-icon::before {
+  transform: translateY(-1px);
+}
+
+.toggle-menu:hover .toggle-menu-icon::after {
+  transform: translateY(1px);
+}
+
+.toggle-active .toggle-menu-icon::before {
+  top: calc(50% - 1px);
+  transform: rotate(45deg);
+}
+
+.toggle-active .toggle-menu-icon::after {
+  top: calc(50% - 1px);
+  transform: rotate(-45deg);
+}
+
+.toggle-active:hover .toggle-menu-icon::before {
+  transform: rotate(35deg);
+}
+
+.toggle-active:hover .toggle-menu-icon::after {
+  transform: rotate(-35deg);
+}
+
+/**
+ * Menu
+ */
+
+.menu {
+  @apply fixed inset-0 w-screen h-screen z-10 flex flex-col items-center justify-center bg-white invisible opacity-0;
+  transform: translateY(-5rem);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.menu-visible {
+  @apply visible opacity-100;
+  transform: translateY(0rem);
+}
+
+@screen md {
+  .menu {
+    @apply static visible opacity-100 w-auto h-auto bg-transparent;
+    transform: translateY(0);
+  }
+}
+
+/**
+ * Menu links
+ */
+.menu-link {
+  @apply relative px-2 py-4 uppercase;
+}
+
+
+.menu-link > span {
+  @apply relative;
+}
+
+.menu-link > span::after {
+  @apply absolute bg-black;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-link:hover > span::after,
+.menu-link:focus > span::after,
+.menu-link-active > span::after {
+  transform: scaleX(1);
+}

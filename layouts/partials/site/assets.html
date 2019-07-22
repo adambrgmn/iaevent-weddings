@@ -1,0 +1,29 @@
+<!-- 
+  We build a slice of all assets defined in `src/assets.urls` in order to use
+  them later on in the templates.
+
+  All assets with critical in the name will be preloaded.
+ -->
+{{ $assets := resources.Get "assets.json" | transform.Unmarshal }}
+{{ $assetsSlice := slice }}
+
+{{ range $key, $path := $assets }}
+  {{ $resource := resources.Get $path }}
+  
+  {{ if eq (getenv "HUGO_ENV") "production" }}
+    {{ $resource := $resource | minify | resources.Fingerprint "sha512" }}
+  {{ end }}
+
+  {{ $assetsSlice = $assetsSlice | append (dict "name" $key "resource" $resource) }}
+{{ end }}
+
+{{ .Scratch.Set "assets" $assetsSlice }}
+
+{{ range $assetsSlice }}
+  {{ if in .name "critical" }}
+    {{ $href := .resource.Permalink }}
+    {{ $type := cond (in .name ".css") "style" "script" }}
+
+    <link rel="preload" as="{{ $type }}" href="{{ .resource.Permalink }}" />
+  {{ end }}
+{{ end }}

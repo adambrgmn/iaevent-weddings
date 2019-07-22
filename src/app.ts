@@ -1,14 +1,9 @@
 import * as env from './utils/env';
+import * as menu from './components/mobile-menu';
 
 const API_BASE = env.API_BASE;
-console.log(API_BASE);
+console.log(`${API_BASE}/hello`);
 
-(async () => {
-  try {
-    const res = await fetch(`${API_BASE}/hello`);
-    const json = await res.json();
-    console.log(json);
-  } catch (err) {
-    console.error(err);
-  }
+(() => {
+  menu.init();
 })();
