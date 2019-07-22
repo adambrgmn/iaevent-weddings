@@ -1,5 +1,7 @@
 ---
 title: Bröllopsplanering
+date: 2019-07-04T18:31:24+02:00
+draft: false
 icon: clipboard
 image: 'v1563829779/ia-event/wedding-03.jpg'
 ---

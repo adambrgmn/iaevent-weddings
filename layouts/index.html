@@ -8,75 +8,26 @@
   {{ with .Params.backgroundImage }}
     {{ $base := $.Site.Params.cloudinaryBase }}
     {{ $src := . }}
-
-    <style>
-      .jumbotron {
-        background-image: url("{{ print $base "f_auto,c_fill,g_center,h_820,w_320/" $src }}")
-      }
-
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,h_1640,w_640/" $src }}")
-        }
-      }
-
-      /* SM */
-      @media (min-width: 640px) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_768/" $src }}")
-        }
-      }
-
-      @media (min-width: 640px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1536/" $src }}")
-        }
-      }
-
-      /* MD */
-      @media (min-width: 768px) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1024/" $src }}")
-        }
-      }
-
-      @media (min-width: 768px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_2048/" $src }}")
-        }
-      }
-
-      /* LG */
-      @media (min-width: 1024px) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1280/" $src }}")
-        }
-      }
-
-      @media (min-width: 1024px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_2560/" $src }}")
-        }
-      }
-
-      /* LG */
-      @media (min-width: 1280px) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1500/" $src }}")
-        }
-      }
-
-      @media (min-width: 1280px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
-        .jumbotron {
-          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}")
-        }
-      }
-    </style>
     <div
       role="banner"
-      class="jumbotron flex justify-center items-center w-full bg-center bg-cover"
+      class="jumbotron flex justify-center items-center w-screen bg-center bg-cover"
     >
-      <div class="w-1/2 md:w-1/4 text-white fill-current">
+      <div class="jumbotron-image-container">
+        <picture>
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" media="(min-width: 1280px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1500/" $src }}" media="(min-width: 1280px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_2560/" $src }}" media="(min-width: 1024px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1280/" $src }}" media="(min-width: 1024px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_2048/" $src }}" media="(min-width: 768px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1024/" $src }}" media="(min-width: 768px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1536/" $src }}" media="(min-width: 640px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_768/" $src }}" media="(min-width: 640px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,h_1640,w_640/" $src }}" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,h_820,w_320/" $src }}" />
+          <img class="lazyload jumbotron-image w-screen object-center object-cover" src="{{ print $base "f_auto,c_scale,w_200/" $src }}"  data-src="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" />
+        </picture>
+      </div>
+      <div class="jumbotron-logotype absolute w-1/2 md:w-1/4 text-white fill-current">
         {{ partial "site/logotype.svg" . }}
       </div>
     </div>
@@ -84,13 +35,15 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ $bundle := $.Site.GetPage "landing" }}
+  {{ $services := $bundle.Resources.Match "service-*" }}
+  {{ $abouts := $bundle.Resources.Match "about-*" }}
+  
   <section class="landing-section section-services mt-32 mb-32 w-full max-w-2xl mx-auto">
-    {{ $sections := slice (.Site.GetPage "landing/brollopsplanering.md") (.Site.GetPage "landing/brollopsdesign.md") }}
-    
-    {{ range $sections }}
+    {{ range $services }}
       <div class="section-service flex flex-wrap">
         <div class="section-image w-full md:w-1/2">
-          {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_1000,h_1000/" .Params.image }}
+          {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
           <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
         </div>
 
@@ -98,14 +51,14 @@
           {{ with .Params.icon }}
             <div class="text-gray-400 w-8 mx-auto mb-4">{{ partial "site/icons.svg" . }}</div>
           {{ end }}
-          <h2 class="mb-1 font-display text-center text-black uppercase">{{ .Title }}</h2>
-          <div class="text-base leading-snug text-gray-500">{{ .Content }}</div>
+          <h2 class="mb-1 font-display text-center text-gray-900 uppercase">{{ .Title }}</h2>
+          <div class="content text-base leading-snug text-gray-600">{{ .Content }}</div>
         </div>
       </div>
     {{ end }}
   </section>
 
-  {{ with $.Site.GetPage "landing/om-mig.md" }}
+  {{ range $abouts }}
     <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto">
       <div class="flex flex-wrap">
         {{ with .Params.video }}
@@ -122,8 +75,8 @@
         {{ end }}
         
         <div class="section-content max-w-md mx-auto px-8">
-          <h2 class="mb-1 font-display text-center text-black uppercase">{{ .Title }}</h2>
-          <div class="text-base leading-snug text-gray-500">{{ .Content }}</div>
+          <h2 class="mb-1 font-display text-center text-gray-900 uppercase">{{ .Title }}</h2>
+          <div class="content text-base leading-snug text-gray-600">{{ .Content }}</div>
         </div>
       </div>
     </section>

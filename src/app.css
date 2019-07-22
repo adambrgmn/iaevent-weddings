@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './css/content.css';
 @import './css/header.css';
 @import './css/jumbotron.css';
 @import './css/landing.css';

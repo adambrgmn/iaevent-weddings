@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start:assets": "parcel watch src/assets.urls -d assets --no-hmr",
-    "start:hugo": "hugo server",
+    "start:hugo": "hugo server -D",
     "start:functions": "BABEL_ENV=functions netlify-lambda serve src/lambda",
     "build": "yarn build:assets && yarn build:hugo && yarn build:functions",
     "build:assets": "parcel build src/assets.urls -d assets",

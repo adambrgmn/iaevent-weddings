@@ -1,3 +1,5 @@
+import * as dom from './utils/dom';
+
 /**
  * From Chrome ~v75 native lazyloading of images and iframes will be enabled and
  * other vendors will probably follow.
@@ -19,8 +21,8 @@ function enableLazyLoadings() {
     elements.forEach(el => {
       if (el.dataset.src) {
         el.onload = () => {
-          el.classList.remove('lazyload');
-          el.classList.add('lazyloaded');
+          dom.removeClass(el, 'lazyload');
+          dom.addClass(el, 'lazyloaded');
         };
 
         el.setAttribute('loading', 'lazy');
@@ -54,3 +56,4 @@ function lazysizeFallback(
 }
 
 window.addEventListener('DOMContentLoaded', enableLazyLoadings);
+enableLazyLoadings();
