@@ -11,64 +11,64 @@
 
     <style>
       .jumbotron {
-        background-image: url("{{ print $base "c_fill,g_center,h_820,w_320/" $src }}")
+        background-image: url("{{ print $base "f_auto,c_fill,g_center,h_820,w_320/" $src }}")
       }
 
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,h_1640,w_640/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,h_1640,w_640/" $src }}")
         }
       }
 
       /* SM */
       @media (min-width: 640px) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_768/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_768/" $src }}")
         }
       }
 
       @media (min-width: 640px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_1536/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1536/" $src }}")
         }
       }
 
       /* MD */
       @media (min-width: 768px) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_1024/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1024/" $src }}")
         }
       }
 
       @media (min-width: 768px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_2048/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_2048/" $src }}")
         }
       }
 
       /* LG */
       @media (min-width: 1024px) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_1280/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1280/" $src }}")
         }
       }
 
       @media (min-width: 1024px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_2560/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_2560/" $src }}")
         }
       }
 
       /* LG */
       @media (min-width: 1280px) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_1500/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_1500/" $src }}")
         }
       }
 
       @media (min-width: 1280px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)) {
         .jumbotron {
-          background-image: url("{{ print $base "c_fill,g_center,w_3000/" $src }}")
+          background-image: url("{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}")
         }
       }
     </style>
@@ -84,5 +84,48 @@
 {{ end }}
 
 {{ define "main" }}
-  <div></div>
+  <section class="landing-section section-services mt-32 mb-32 w-full max-w-2xl mx-auto">
+    {{ $sections := slice (.Site.GetPage "landing/brollopsplanering.md") (.Site.GetPage "landing/brollopsdesign.md") }}
+    
+    {{ range $sections }}
+      <div class="section-service flex flex-wrap">
+        <div class="section-image w-full md:w-1/2">
+          {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_1000,h_1000/" .Params.image }}
+          <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
+        </div>
+
+        <div class="section-content w-full md:w-1/2 p-8">
+          {{ with .Params.icon }}
+            <div class="text-gray-400 w-8 mx-auto mb-4">{{ partial "site/icons.svg" . }}</div>
+          {{ end }}
+          <h2 class="mb-1 font-display text-center text-black uppercase">{{ .Title }}</h2>
+          <div class="text-base leading-snug text-gray-500">{{ .Content }}</div>
+        </div>
+      </div>
+    {{ end }}
+  </section>
+
+  {{ with $.Site.GetPage "landing/om-mig.md" }}
+    <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto">
+      <div class="flex flex-wrap">
+        {{ with .Params.video }}
+          {{ $base := replaceRE "image" "video" $.Site.Params.cloudinaryBase }}
+          {{ $src := print $base "ac_none,f_auto,vc_auto,w_700/" . }}
+          {{ $webm := replaceRE "(\\.\\w+)$" ".webm" $src }}
+
+          <div class="w-full mb-8">
+            <video autoplay loop muted>
+              <source src="{{ $webm }}" type="video/webm">
+              <source src="{{ $src }}" type="video/mp4">
+            </video>
+          </div>
+        {{ end }}
+        
+        <div class="section-content max-w-md mx-auto px-8">
+          <h2 class="mb-1 font-display text-center text-black uppercase">{{ .Title }}</h2>
+          <div class="text-base leading-snug text-gray-500">{{ .Content }}</div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
 {{ end }}
