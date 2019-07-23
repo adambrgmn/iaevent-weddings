@@ -9,7 +9,7 @@ module.exports = {
     require('postcss-preset-env')({ stage: 3 }),
     isProd &&
       require('@fullhuman/postcss-purgecss')({
-        content: ['**/*.html', 'assets/**/*.ts'],
+        content: ['**/*.html', 'src/**/*.ts'],
         defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
         whitelistPatterns: [/lazyload/],
       }),
