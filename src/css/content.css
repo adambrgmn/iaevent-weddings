@@ -3,5 +3,5 @@
 }
 
 .content *:last-child {
-  @apply mb-0;
+  @apply mb-0 max-w-lg;
 }

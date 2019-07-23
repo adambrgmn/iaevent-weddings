@@ -39,23 +39,27 @@
   {{ $services := $bundle.Resources.Match "service-*" }}
   {{ $abouts := $bundle.Resources.Match "about-*" }}
   
-  <section class="landing-section section-services mt-32 mb-32 w-full max-w-2xl mx-auto">
-    {{ range $services }}
-      <div class="section-service flex flex-wrap">
-        <div class="section-image w-full md:w-1/2">
-          {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
-          <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
-        </div>
+  <section class="landing-section w-full mx-auto mb-32 mt-16 md:mt-0">
+    <div class="section-services w-full">
+      {{ range $services }}
+        <div class="section-service flex flex-wrap items-center">
+          <div class="section-image w-full md:w-1/2">
+            {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
+            <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
+          </div>
 
-        <div class="section-content w-full md:w-1/2 p-8">
-          {{ with .Params.icon }}
-            <div class="text-gray-400 w-8 mx-auto mb-4">{{ partial "site/icons.svg" . }}</div>
-          {{ end }}
-          <h2 class="mb-1 font-display text-center text-gray-900 uppercase">{{ .Title }}</h2>
-          <div class="content text-base leading-snug text-gray-600">{{ .Content }}</div>
+          <div class="section-content w-full md:w-1/2 p-8">
+            <div class="max-w-lg mx-auto">
+              {{ with .Params.icon }}
+                <div class="text-gray-400 w-8 mx-auto mb-4">{{ partial "site/icons.svg" . }}</div>
+              {{ end }}
+              <h2 class="mb-1 font-display text-xl text-center text-gray-900 uppercase tracking-wider">{{ .Title }}</h2>
+              <div class="content text-base leading-snug text-gray-600">{{ .Content }}</div>
+            </div>
+          </div>
         </div>
-      </div>
-    {{ end }}
+      {{ end }}
+    </div>
   </section>
 
   {{ range $abouts }}
@@ -75,7 +79,7 @@
         {{ end }}
         
         <div class="section-content max-w-md mx-auto px-8">
-          <h2 class="mb-1 font-display text-center text-gray-900 uppercase">{{ .Title }}</h2>
+          <h2 class="mb-1 font-display text-xl text-center text-gray-900 uppercase tracking-wider">{{ .Title }}</h2>
           <div class="content text-base leading-snug text-gray-600">{{ .Content }}</div>
         </div>
       </div>
