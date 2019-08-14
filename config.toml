@@ -16,8 +16,8 @@ disableAliases = true
   description = "..."
   disallowSearchEngines = false # set robots.txt to disallow everything
   googleFonts = [
-    "Advent Pro",
-    "Work Sans"
+    "Montserrat:700",
+    "Work Sans:400,700"
   ]
   cloudinaryBase = "https://res.cloudinary.com/adambrgmn/image/upload/"
 

@@ -1,0 +1,14 @@
+.link-button {
+  @apply inline-block mx-auto border-2 border-black p-4 bg-white;
+  transform: translateY(0px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-button:hover,
+.link-button:focus {
+  transform: translateY(-2px);
+}
+
+.link-button.inverted {
+  @apply border-white bg-black text-white;
+}
