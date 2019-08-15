@@ -1,4 +1,5 @@
-import * as dom from './utils/dom';
+import { addClass, removeClass } from './utils/dom';
+import { includes } from './utils';
 
 /**
  * From Chrome ~v75 native lazyloading of images and iframes will be enabled and
@@ -20,13 +21,12 @@ function enableLazyLoadings() {
      */
     elements.forEach(el => {
       if (el.dataset.src) {
-        el.onload = () => {
-          dom.removeClass(el, 'lazyload');
-          dom.addClass(el, 'lazyloaded');
-        };
-
         el.setAttribute('loading', 'lazy');
         el.src = el.dataset.src;
+        el.onload = () => {
+          removeClass(el, 'lazyload');
+          addClass(el, 'lazyloaded');
+        };
       }
     });
   } else if (elements.length > 0) {
@@ -55,5 +55,16 @@ function lazysizeFallback(
   });
 }
 
-window.addEventListener('DOMContentLoaded', enableLazyLoadings);
-enableLazyLoadings();
+/**
+ * Since we cannot be sure wether all content is loaded or not once this script
+ * loads we need to check for the `readyState` on the document.
+ *
+ * If the document is `"interactive"` or `"complete"` we can be enable lazy
+ * loading straight await. Otherwise (if `readyState` is `"loading"`) we will
+ * wait for the `DOMContentLoaded` event to happen before enabling lazyloading.
+ */
+if (includes(['interactive', 'complete'], document.readyState)) {
+  enableLazyLoadings();
+} else {
+  window.addEventListener('DOMContentLoaded', enableLazyLoadings);
+}
