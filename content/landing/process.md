@@ -2,6 +2,7 @@
 title: Processen
 date: 2019-08-13T15:31:24+02:00
 draft: false
+link: '/tjanster'
 ---
 
 - Ett första möte
@@ -10,5 +11,3 @@ draft: false
 - Besöka lokal
 - Kontinuerliga avstämningar
 - BRÖLLOP
-
-<a href="#" class="link-button inverted">Läs mer om processen</a>

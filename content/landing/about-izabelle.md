@@ -3,6 +3,7 @@ title: Möt Izabelle
 date: 2019-07-04T18:31:24+02:00
 draft: false
 video: 'v1563831455/ia-event/Decoratemore-FILM.mp4'
+link: '/om'
 ---
 
 Jag som driver Wedding by ia event heter Izabelle Andersson och är utbildad
