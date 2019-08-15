@@ -25,7 +25,7 @@ export async function handler(
       statusCode: 200,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': process.env.URL || '*',
       },
       body: JSON.stringify(response.data),
     };
@@ -36,7 +36,7 @@ export async function handler(
         statusCode: error.response.status,
         headers: {
           ...error.response.headers,
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': process.env.URL || '*',
         },
         body: parseResponseData(error.response.data),
       };
@@ -46,7 +46,7 @@ export async function handler(
       statusCode: 500,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': process.env.URL || '*',
       },
       body: JSON.stringify(error),
     };
