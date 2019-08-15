@@ -1,14 +1,12 @@
 import axios from 'axios';
 
+const formUrlEncoded = (x: { [key: string]: string }) =>
+  Object.keys(x).reduce((p, c) => p + `&${c}=${encodeURIComponent(x[c])}`, '');
+
 export async function handler(
   event: AWSLambda.APIGatewayProxyEvent,
   context: AWSLambda.APIGatewayEventRequestContext,
 ): Promise<AWSLambda.APIGatewayProxyResult> {
-  const ret = {
-    ...event,
-    // body: JSON.parse(event.body || '{}'),
-  };
-
   const code = event.queryStringParameters && event.queryStringParameters.code;
   if (code == null) {
     return {
@@ -25,20 +23,34 @@ export async function handler(
     };
   }
 
+  if (
+    process.env.INSTAGRAM_CLIENT_ID == null ||
+    process.env.INSTAGRAM_CLIENT_SECRET == null ||
+    process.env.INSTAGRAM_REDIRECT_URI == null
+  ) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({
+        error: true,
+        message: 'Missing environment variables',
+        event,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    };
+  }
+
   try {
-    const formUrlEncoded = (x: { [key: string]: string }) =>
-      Object.keys(x).reduce(
-        (p, c) => p + `&${c}=${encodeURIComponent(x[c])}`,
-        '',
-      );
     const response = await axios({
       method: 'post',
       url: 'https://api.instagram.com/oauth/access_token',
       data: formUrlEncoded({
-        client_id: '214654e8af3e4a36a4e387965678f081',
-        client_secret: '2fd5dbb1c3af49689eaa0b1ac2e6a0e8',
+        client_id: process.env.INSTAGRAM_CLIENT_ID,
+        client_secret: process.env.INSTAGRAM_CLIENT_SECRET,
         grant_type: 'authorization_code',
-        redirect_uri: 'http://localhost:9000/.netlify/functions/handle-auth',
+        redirect_uri: process.env.INSTAGRAM_REDIRECT_URI,
         code,
       }),
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
