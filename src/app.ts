@@ -1,5 +1,6 @@
 import * as env from './utils/env';
 import * as menu from './components/mobile-menu';
+import * as onEnter from './components/on-enter';
 import { watchElement } from './utils/watch-element';
 
 const API_BASE = env.API_BASE;
@@ -7,6 +8,7 @@ console.log(`${API_BASE}/hello`);
 
 (async () => {
   menu.init();
+  onEnter.init();
 
   try {
     const igFeedParent = document.getElementById('ig-feed');

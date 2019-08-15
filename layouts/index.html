@@ -43,7 +43,7 @@
   <section class="landing-section w-full mx-auto mb-32 mt-16 md:mt-0">
     <div class="section-services w-full">
       {{ range $services }}
-        <div class="section-service flex flex-wrap items-center">
+        <div class="section-service flex flex-wrap items-center opacity-0" data-once-enter="animated fadeInUp">
           <div class="section-image w-full p-8 md:w-1/2">
             {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
             <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
@@ -67,7 +67,7 @@
   </section>
 
   {{ range $process }}
-    <section class="landing-section section-process text-black mb-32 w-full max-w-2xl mx-auto">
+    <section class="landing-section section-process text-black mb-32 w-full max-w-2xl mx-auto opacity-0" data-once-enter="animated fadeInUp">
       <h2 class="landing-title font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
       <div>
         {{ .Content }}
@@ -80,7 +80,7 @@
   {{ end }}
 
   {{ range $abouts }}
-    <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto">
+    <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto opacity-0" data-once-enter="animated fadeInUp">
       <div class="flex flex-wrap">
         {{ with .Params.video }}
           {{ $base := replaceRE "image" "video" $.Site.Params.cloudinaryBase }}

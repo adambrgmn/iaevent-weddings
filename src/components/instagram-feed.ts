@@ -49,8 +49,15 @@ const init = async (parentEl: HTMLElement) => {
       const linkElement = document.createElement('a');
       const imageElement = document.createElement('img');
 
-      addClass(listItemElement, 'feed-list-item', 'p-1');
+      addClass(
+        listItemElement,
+        'feed-list-item',
+        'p-1',
+        'animated',
+        'fadeInRight',
+      );
       listItemElement.style.maxWidth = `${expectedWidth}px`;
+      listItemElement.style.animationDelay = `${50 * i}ms`;
 
       linkElement.href = entry.link;
       addClass(linkElement, 'feed-link');
@@ -58,6 +65,7 @@ const init = async (parentEl: HTMLElement) => {
       imageElement.src = entry.image.url;
       imageElement.width = entry.image.width;
       imageElement.height = entry.image.height;
+      imageElement.setAttribute('loading', 'lazy');
       addClass(imageElement, 'feed-thumbnail', 'w-full');
 
       linkElement.appendChild(imageElement);

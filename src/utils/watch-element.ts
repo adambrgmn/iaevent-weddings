@@ -1,11 +1,32 @@
-import Mitt from 'mitt';
+import Mitt, { Emitter, Handler } from 'mitt';
+import { addClass, removeClass } from './dom';
+import { isArray } from '.';
+
+export interface WatchElementEvent {
+  entry: IntersectionObserverEntry;
+}
+
+export interface WatchElementHandler extends Handler {
+  (event: WatchElementEvent): void;
+}
+
+export interface WathElementEmitter extends Emitter {
+  on(type: 'enter', handler: WatchElementHandler): void;
+  on(type: 'leave', handler: WatchElementHandler): void;
+
+  off(type: 'enter', handler: WatchElementHandler): void;
+  off(type: 'leave', handler: WatchElementHandler): void;
+
+  emit(type: 'enter', event: WatchElementEvent): void;
+  emit(type: 'leave', event: WatchElementEvent): void;
+}
 
 const watchElement = (
-  el: HTMLElement,
+  el: Element | Element[],
   opts: IntersectionObserverInit = {},
   once: boolean = false,
-) => {
-  const emitter = new Mitt();
+): WathElementEmitter => {
+  const emitter: WathElementEmitter = new Mitt();
 
   const options: IntersectionObserverInit = {
     rootMargin: opts.rootMargin || '0px',
@@ -13,26 +34,30 @@ const watchElement = (
     ...opts,
   };
 
-  let hasIntersected = false;
-
   const callback: IntersectionObserverCallback = (entries, observer) => {
-    const entry = entries.find(e => e.target === el);
-    if (entry) {
-      if (entry.target === el && entry.isIntersecting) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
         emitter.emit('enter', { entry });
-        hasIntersected = true;
+        removeClass(entry.target, 'leave');
+        addClass(entry.target, 'enter');
         if (once) observer.unobserve(entry.target);
       }
 
-      if (entry.target === el && !entry.isIntersecting && hasIntersected) {
+      if (!entry.isIntersecting) {
+        removeClass(entry.target, 'enter');
+        addClass(entry.target, 'leave');
         emitter.emit('leave', { entry });
-        hasIntersected = false;
       }
-    }
+    });
   };
 
   const observer = new IntersectionObserver(callback, options);
-  observer.observe(el);
+
+  if (isArray(el)) {
+    el.forEach(e => observer.observe(e));
+  } else {
+    observer.observe(el);
+  }
 
   return emitter;
 };

@@ -1,7 +1,4 @@
-export const toggleClass = <T extends HTMLElement>(
-  el: T,
-  className: string,
-): T => {
+export const toggleClass = <T extends Element>(el: T, className: string): T => {
   if (el.classList) {
     el.classList.toggle(className);
   } else {
@@ -17,7 +14,7 @@ export const toggleClass = <T extends HTMLElement>(
   return el;
 };
 
-export const removeClass = <T extends HTMLElement>(
+export const removeClass = <T extends Element>(
   el: T,
   ...classNames: string[]
 ): T => {
@@ -39,7 +36,7 @@ export const removeClass = <T extends HTMLElement>(
   return el;
 };
 
-export const addClass = <T extends HTMLElement>(
+export const addClass = <T extends Element>(
   el: T,
   ...classNames: string[]
 ): T => {
@@ -49,10 +46,7 @@ export const addClass = <T extends HTMLElement>(
   return el;
 };
 
-export const hasClass = <T extends HTMLElement>(
-  el: T,
-  className: string,
-): T => {
+export const hasClass = <T extends Element>(el: T, className: string): T => {
   if (el.classList) el.classList.contains(className);
   else new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
 
