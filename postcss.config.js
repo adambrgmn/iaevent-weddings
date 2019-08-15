@@ -11,7 +11,7 @@ module.exports = {
       require('@fullhuman/postcss-purgecss')({
         content: ['**/*.html', 'src/**/*.ts'],
         defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-        whitelistPatterns: [/lazyload/],
+        whitelistPatterns: [/lazyload/gi],
       }),
   ].filter(Boolean),
 };
