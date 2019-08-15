@@ -3,7 +3,7 @@ import rafSchd from 'raf-schd';
 import * as env from '../utils/env';
 import { InstagramFeedResponse } from '../types/instagram';
 import { addClass } from '../utils/dom';
-import { cap } from '../utils';
+import { clamp } from '../utils';
 
 const API_BASE = env.API_BASE;
 
@@ -40,7 +40,11 @@ const init = async (parentEl: HTMLElement) => {
       .forEach(n => parentEl.removeChild(n));
 
     const itemsPerRow = Math.floor(width / expectedWidth);
-    const totalRows = cap(1, 5, Math.floor((entries.length + 1) / itemsPerRow));
+    const totalRows = clamp(
+      1,
+      5,
+      Math.floor((entries.length + 1) / itemsPerRow),
+    );
     const totalItems = itemsPerRow * totalRows;
 
     for (let i = 0; i < totalItems - 1; i++) {
