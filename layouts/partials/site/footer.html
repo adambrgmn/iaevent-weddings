@@ -1,5 +1,14 @@
-<div id="ig-feed" class="p-4 mb-12"></div>
+<div class="p-12 bg-black">
+  <ul id="ig-feed" class="instagram-feed flex flex-wrap justify-center">
+    <li class="p-1">
+      <a href="{{ $.Site.Params.instagramProfile }}" class="box flex flex-col justify-center items-center w-full h-full bg-white text-black p-4">
+        <span class="w-8 mb-2">
+          {{ partial "site/icons.svg" "instagram" }}
+        </span>
+        <span class="text-center text-xs leading-snug">Följ oss på Instagram</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
-<footer class="z-0">
-  
-</footer>
+<footer class="z-0"></footer>

@@ -5,7 +5,6 @@ const watchElement = (
   opts: IntersectionObserverInit = {},
   once: boolean = false,
 ) => {
-  console.log(el);
   const emitter = new Mitt();
 
   const options: IntersectionObserverInit = {
@@ -13,14 +12,12 @@ const watchElement = (
     threshold: opts.threshold || 1.0,
     ...opts,
   };
-  console.log(options);
 
   let hasIntersected = false;
 
   const callback: IntersectionObserverCallback = (entries, observer) => {
     const entry = entries.find(e => e.target === el);
     if (entry) {
-      console.log(entry);
       if (entry.target === el && entry.isIntersecting) {
         emitter.emit('enter', { entry });
         hasIntersected = true;

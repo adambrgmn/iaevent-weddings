@@ -19,15 +19,21 @@ export const toggleClass = <T extends HTMLElement>(
 
 export const removeClass = <T extends HTMLElement>(
   el: T,
-  className: string,
+  ...classNames: string[]
 ): T => {
   if (el.classList) {
-    el.classList.remove(className);
+    el.classList.remove(...classNames);
   } else {
-    el.className = el.className.replace(
-      new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'),
-      ' ',
-    );
+    for (let i = 0; i < classNames.length; i++) {
+      const className = classNames[i];
+      el.className = el.className.replace(
+        new RegExp(
+          '(^|\\b)' + className.split(' ').join('|') + '(\\b|$)',
+          'gi',
+        ),
+        ' ',
+      );
+    }
   }
 
   return el;
@@ -35,10 +41,10 @@ export const removeClass = <T extends HTMLElement>(
 
 export const addClass = <T extends HTMLElement>(
   el: T,
-  className: string,
+  ...classNames: string[]
 ): T => {
-  if (el.classList) el.classList.add(className);
-  else el.className += ' ' + className;
+  if (el.classList) el.classList.add(...classNames);
+  else el.className += ' ' + classNames.join(' ');
 
   return el;
 };

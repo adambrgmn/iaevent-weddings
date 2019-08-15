@@ -20,6 +20,7 @@ disableAliases = true
     "Work Sans:400,700"
   ]
   cloudinaryBase = "https://res.cloudinary.com/adambrgmn/image/upload/"
+  instagramProfile = "https://www.instagram.com/weddingbyiaevent/"
 
 # add redirects/headers
 [outputs]
