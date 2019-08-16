@@ -1,7 +1,7 @@
 {{ $page := .}}
 {{ with.Params.backgroundImage }}
 {{ $base := $.Site.Params.cloudinaryBase }}
-{{ $src := path.Join $base "f_auto,c_fill,g_center,w_800/" . }}
+{{ $src := print $base "f_auto,c_fill,g_center,w_800/" . }}
 <style>
   .jumbo {
     background-image: url({{ $src }});

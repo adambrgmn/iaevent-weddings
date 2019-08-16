@@ -12,17 +12,17 @@
     >
       <div class="jumbotron-image-container">
         <picture>
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_3000/" $src }}" media="(min-width: 1280px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_1500/" $src }}" media="(min-width: 1280px)" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_2560/" $src }}" media="(min-width: 1024px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_1280/" $src }}" media="(min-width: 1024px)" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_2048/" $src }}" media="(min-width: 768px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_1024/" $src }}" media="(min-width: 768px)" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_1536/" $src }}" media="(min-width: 640px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,w_768/" $src }}" media="(min-width: 640px)" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,h_1640,w_640/" $src }}" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" />
-          <source data-srcset="{{ path.Join $base "f_auto,c_fill,g_center,h_820,w_320/" $src }}" />
-          <img class="lazyload jumbotron-image w-screen object-center object-cover" src="{{ path.Join $base "f_auto,c_scale,w_200/" $src }}" data-src="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" alt="" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" media="(min-width: 1280px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1500/" $src }}" media="(min-width: 1280px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_2560/" $src }}" media="(min-width: 1024px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1280/" $src }}" media="(min-width: 1024px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_2048/" $src }}" media="(min-width: 768px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1024/" $src }}" media="(min-width: 768px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_1536/" $src }}" media="(min-width: 640px) and ((-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi))" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_768/" $src }}" media="(min-width: 640px)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,h_1640,w_640/" $src }}" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" />
+          <source data-srcset="{{ print $base "f_auto,c_fill,g_center,h_820,w_320/" $src }}" />
+          <img class="lazyload jumbotron-image w-screen object-center object-cover" src="{{ print $base "f_auto,c_scale,w_200/" $src }}" data-src="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" alt="" />
         </picture>
       </div>
       <div class="jumbotron-logotype absolute w-1/2 md:w-1/4 text-white fill-current">
@@ -43,7 +43,7 @@
       {{ range $services }}
         <div class="section-service flex flex-wrap items-center opacity-0" data-once-enter="animated fadeInUp">
           <div class="section-image w-full p-8 md:w-1/2">
-            {{ $src := path.Join $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
+            {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
             <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
           </div>
 
@@ -82,7 +82,7 @@
       <div class="flex flex-wrap">
         {{ with .Params.video }}
           {{ $base := replaceRE "image" "video" $.Site.Params.cloudinaryBase }}
-          {{ $src := path.Join $base "ac_none,vc_auto,w_700/" . }}
+          {{ $src := print $base "ac_none,vc_auto,w_700/" . }}
           {{ $webm := replaceRE "(\\.\\w+)$" ".webm" $src }}
 
           <div class="w-full mb-8">
