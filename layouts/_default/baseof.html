@@ -24,6 +24,8 @@
     {{ block "header" . }}
       {{ partial "site/header.html" . }}
     {{ end }}
+
+    {{ block "post-header" . }}{{ end }}
     
     <main class="site-main z-0" role="main">
       {{ block "main" . }}{{ end }}

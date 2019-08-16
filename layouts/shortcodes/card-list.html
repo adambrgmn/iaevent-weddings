@@ -1,0 +1,15 @@
+{{/*
+  Usage:
+  {{ < card-list >}}
+    {{ < card title="The First Title" image="cloudinary-image" >}}
+      Content of first card
+    {{ < /card >}}
+    {{ < card title="The Second Title" image="cloudinary-image" >}}
+      Content of second card
+    {{ < /card >}}
+  {{ < /card-list > }}
+*/}}
+
+<div class="card-list flex flex-wrap justify-start w-full mt-8">
+  {{- .Inner -}}
+</div>

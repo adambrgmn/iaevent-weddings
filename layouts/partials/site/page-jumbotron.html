@@ -1,0 +1,43 @@
+{{ $page := .}}
+{{ with.Params.backgroundImage }}
+{{ $base := $.Site.Params.cloudinaryBase }}
+{{ $src := path.Join $base "f_auto,c_fill,g_center,w_800/" . }}
+<style>
+  .jumbo {
+    background-image: url({{ $src }});
+  }
+
+  @media (min-width: 640px) {
+    .jumbo {
+      background-image: url({{ replace $src "w_800" "w_800" }});
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jumbo {
+      background-image: url({{ replace $src "w_800" "w_1200" }});
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .jumbo {
+      background-image: url({{ replace $src "w_800" "w_1400" }});
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .jumbo {
+      background-image: url({{ replace $src "w_800" "w_3000" }});
+    }
+  }
+
+  .jumbo-text {
+    text-shadow: 0 10px 25px rgba(255, 255, 255, .75);
+  }
+</style>
+<div class="jumbo flex justify-center items-center w-screen mb-24 bg-center bg-no-repeat bg-cover" style="height: 50vh;">
+  <h1 class="jumbo-text font-display text-black text-4xl uppercase tracking-widest">
+    {{ $page.Title }}
+  </h1>
+</div>
+{{ end }}

@@ -22,6 +22,18 @@
   whitespace: normal;
 }
 
+.hyphens-none {
+  hyphens: none;
+}
+
+.hyphens-manual {
+  hyphens: manual;
+}
+
+.hyphens-auto {
+  hyphens: auto;
+}
+
 [data-content-before]:before {
   content: attr(data-content-before);
 }

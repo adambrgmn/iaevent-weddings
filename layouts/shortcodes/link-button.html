@@ -1,0 +1,5 @@
+<p class="text-center">
+  <a href="{{ .Get "href" }}" class="link-button {{ with .Get "mode" }} {{ . }} {{ end }}">
+    {{ .Inner | markdownify }}
+  </a>
+</p>
