@@ -1,9 +1,16 @@
 <!--
+  Polyfills defined in `config.toml` and loaded from https://polyfill.io/
+-->
+{{ with $.Site.Params.polyfills }}
+  {{ $query := delimit . "," | querify "rum" true "flags" "gated" "features" | safeURL }}
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?{{ $query }}"></script>
+{{ end }}
+
+<!--
   critical.js is the javascript that is necessary early in tha page, in our case
   we're talking about e.g. image lazyloading.
   When in production mode we will inline the javascript in head.
 -->
-
 {{ $assets := .Scratch.Get "assets" }}
 {{ range $assets }}
   {{ if eq .name "critical.js" }}

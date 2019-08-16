@@ -19,6 +19,10 @@ disableAliases = true
     "Montserrat:700",
     "Work Sans:400,700"
   ]
+  polyfills = [
+    "IntersectionObserver",
+    "requestAnimationFrame"
+  ]
   cloudinaryBase = "https://res.cloudinary.com/adambrgmn/image/upload/"
   instagramProfile = "https://www.instagram.com/weddingbyiaevent/"
 
