@@ -11,4 +11,16 @@
   </ul>
 </div>
 
-<footer class="z-0"></footer>
+<footer class="z-0">
+  {{ with (getenv "HUGO_CLIENT_ID") }}
+    <!--
+      This below is to provide a link to sign into instagram in order to get a
+      proper access_token.
+      Show it by running HUGO_CLIENT_ID=<instagram-client-id> yarn start:hugo
+    -->
+    <p>
+      {{ $query := querify "client_id" . "redirect_uri" "http://localhost:9000/.netlify/functions/handle-auth" "response_type" "code" }}
+      <a href="https://api.instagram.com/oauth/authorize/?{{ $query | safeURL }}">Sign in to Instagram</a>
+    </p>
+  {{ end }}
+</footer>
