@@ -111,7 +111,6 @@ const init = async (parentEl: HTMLElement) => {
   });
 
   createElements();
-  window.addEventListener('resize', createElements);
 };
 
 export { init };
