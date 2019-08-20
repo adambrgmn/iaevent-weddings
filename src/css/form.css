@@ -1,0 +1,49 @@
+.input-group {
+  @apply flex flex-row flex-wrap justify-between mb-8;
+}
+
+.input-group:last-child {
+  @apply mb-0;
+}
+
+.input-label {
+  @apply flex flex-col flex-1 mb-2;
+}
+
+@screen sm {
+  .input-label {
+    @apply mr-2;
+  }
+}
+
+.input-label:last-child {
+  @apply mr-0;
+}
+
+.input-label-text {
+  @apply mb-1 text-xs opacity-75;
+}
+
+.input {
+  @apply h-8 p-2 text-sm leading-none bg-white text-black;
+  min-width: theme('spacing.48');
+}
+
+.textarea {
+  @apply w-full p-2 text-sm leading-normal bg-white text-black;
+}
+
+.submit-button {
+  @apply border-2 border-black p-2 text-sm bg-white no-underline;
+  transform: translateY(0px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  transform: translateY(-2px);
+}
+
+.submit-button.inverted {
+  @apply border-white bg-black text-white;
+}
