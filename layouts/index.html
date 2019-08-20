@@ -65,7 +65,7 @@
   </section>
 
   {{ with $testimonials }}
-  <section class="landing-section section-testimonials mb-32 p-12 w-full bg-tinted text-black overflow-x-hidden opacity-0" data-once-enter="animated fadeIn">
+  <section class="landing-section section-testimonials mb-24 p-12 w-full bg-tinted text-black overflow-x-hidden opacity-0" data-once-enter="animated fadeIn">
     <div class="testimonials relative w-full max-w-2xl mx-auto">
       {{ .Content }}
     </div>
@@ -73,14 +73,14 @@
   {{ end }}
 
   {{ range $abouts }}
-    <section class="landing-section section-about mb-32 w-full p-8 mx-auto opacity-0" data-once-enter="animated fadeInUp">
+    <section class="landing-section section-about mb-32 w-full p-8 mx-auto">
       <div class="flex flex-wrap items-center">
         {{ with .Params.video }}
           {{ $base := replaceRE "image" "video" $.Site.Params.cloudinaryBase }}
           {{ $src := print $base "ac_none,vc_auto,w_650/" . }}
           {{ $webm := replaceRE "(\\.\\w+)$" ".webm" $src }}
 
-          <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <div class="w-full md:w-1/2 mb-8 md:mb-0 opacity-0" data-once-enter="animated fadeInUp">
             <video autoplay loop muted playsinline>
               <source src="{{ $webm }}" type="video/webm">
               <source src="{{ $src }}" type="video/mp4">
@@ -88,7 +88,7 @@
           </div>
         {{ end }}
         
-        <div class="section-content w-full md:w-1/2 mx-auto">
+        <div class="section-content w-full md:w-1/2 mx-auto opacity-0 delay" data-once-enter="animated fadeInUp">
           <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
           <div class="content text-base leading-snug">
             {{ .Content }}
