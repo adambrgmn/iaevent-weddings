@@ -1,25 +1,62 @@
 <div class="px-4 py-12 max-w-2xl mx-auto">
   <div class="mb-8">
-    <a href="{{ $.Site.Params.instagramProfile }}" class="block flex flex-col justify-center items-center w-full">
-      <span class="w-8">
+    <a href="{{ $.Site.Params.social.instagram }}" class="block flex flex-col justify-center items-center w-full text-center">
+      <span class="w-8 mb-2">
         {{ partial "site/icons.svg" "instagram" }}
       </span>
-      <span>Följ oss på Instagram</span>
+      <span>Följ oss på Instagram<br>@weddingbyiaevent</span>
     </a>
   </div>
   <ul id="ig-feed" class="instagram-feed flex flex-nowrap justify-around justify-center"></ul>
 </div>
 
-<footer class="z-0">
-  {{ with (getenv "HUGO_CLIENT_ID") }}
-    <!--
-      This below is to provide a link to sign into instagram in order to get a
-      proper access_token.
-      Show it by running HUGO_CLIENT_ID=<instagram-client-id> yarn start:hugo
-    -->
-    <p>
-      {{ $query := querify "client_id" . "redirect_uri" "http://localhost:9000/.netlify/functions/handle-auth" "response_type" "code" }}
-      <a href="https://api.instagram.com/oauth/authorize/?{{ $query | safeURL }}">Sign in to Instagram</a>
-    </p>
-  {{ end }}
+<footer class="z-0 flex flex-col md:flex-row justify-around px-8 pt-16 pb-24 bg-tinted">
+  <div class="w-16 mb-8">
+    {{ partial "site/logotype.svg" . }}
+  </div>
+
+  <div class="mb-8">
+    {{ $mail := $.Site.Params.contact.mail }}
+    {{ $phone := $.Site.Params.contact.phone }}
+    <ul>
+      <li>
+        <a href="mailto:{{ $mail }}">
+          <span class="icon baseline">{{ partial "site/icons.svg" "mail" }}</span>
+          {{ $mail }}
+        </a>
+      </li>
+      <li>
+        <a href="tel:{{ $phone }}">
+          <span class="icon baseline">{{ partial "site/icons.svg" "phone" }}</span>
+          {{ $phone }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mb-8">
+    {{ $instagram := $.Site.Params.social.instagram }}
+    <ul>
+      {{ range $key, $url := $.Site.Params.social }}
+        <li>
+          <a href="{{ $url }}">
+            <span class="icon baseline">{{ partial "site/icons.svg" $key }}</span>
+            @weddingbyiaevent
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 </footer>
+
+{{ with (getenv "HUGO_CLIENT_ID") }}
+  <!--
+    This below is to provide a link to sign into instagram in order to get a
+    proper access_token.
+    Show it by running HUGO_CLIENT_ID=<instagram-client-id> yarn start:hugo
+  -->
+  <p>
+    {{ $query := querify "client_id" . "redirect_uri" "http://localhost:9000/.netlify/functions/handle-auth" "response_type" "code" }}
+    <a href="https://api.instagram.com/oauth/authorize/?{{ $query | safeURL }}">Sign in to Instagram</a>
+  </p>
+{{ end }}

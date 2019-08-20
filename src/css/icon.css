@@ -1,0 +1,22 @@
+.icon {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  width: 1em;
+  height: 1em;
+}
+
+.icon svg {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon.baseline svg {
+  position: absolute;
+  bottom: -0.125em;
+}
