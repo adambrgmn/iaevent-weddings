@@ -1,21 +1,15 @@
-/* eslint-disable import/first */
-
-(global as any).WebSocket = require('ws');
-(global as any).XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
-
-import * as firebase from 'firebase/app';
-import 'firebase/firestore';
+import firebase from 'firebase-admin';
 import { HttpError, BadRequest } from 'http-errors';
 import { createResponse } from '../utils/create-response';
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: 'iaevent-wedding.firebaseapp.com',
+  credential: firebase.credential.cert({
+    projectId: 'iaevent-wedding',
+    clientEmail: process.env.FIREBASE_CLIENT_EMAIL as string,
+    privateKey: process.env.FIREBASE_PRIVATE_KEY as string,
+  }),
   databaseURL: 'https://iaevent-wedding.firebaseio.com',
   projectId: 'iaevent-wedding',
-  storageBucket: 'iaevent-wedding.appspot.com',
-  messagingSenderId: '786640261818',
-  appId: '1:786640261818:web:4d71529afeffea44',
 };
 
 firebase.initializeApp(firebaseConfig);
