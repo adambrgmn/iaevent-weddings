@@ -1,4 +1,9 @@
-import firebase from 'firebase/app';
+/* eslint-disable import/first */
+
+(global as any).WebSocket = require('ws');
+(global as any).XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
+import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import { HttpError, BadRequest } from 'http-errors';
 import { createResponse } from '../utils/create-response';
