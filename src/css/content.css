@@ -1,3 +1,18 @@
+.page-title {
+  @apply relative font-display font-bold text-4xl text-center uppercase;
+  margin-bottom: calc(theme('spacing.24') + theme('spacing.4'));
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 3px / 2);
+  width: 3px;
+  height: theme('spacing.24');
+  background-color: currentColor;
+}
+
 .content *:last-child {
   @apply mb-0;
 }

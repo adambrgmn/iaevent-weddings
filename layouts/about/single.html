@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="about my-12 mx-auto w-full p-8 max-w-4xl">
+  <h1 class="page-title">{{ .Title }}</h1>
+
+  <div class="flex flex-row pb-8">
+    {{ with .Params.image }}
+      <div class="w-1/2 pr-4">
+        {{ $base := $.Site.Params.cloudinaryBase }}
+        {{ $src := print $base "w_700/" . }}
+        <img src="{{ $src }}" alt="">
+      </div>
+    {{ end }}
+    <div class="content w-1/2 pl-4">
+      {{ .Content }}
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center">
+    {{ with .Params.link }}
+      <a class="link-button" href="{{ .url }}">{{ .text }}</a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
