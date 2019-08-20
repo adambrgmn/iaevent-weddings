@@ -36,7 +36,6 @@
   {{ $bundle := $.Site.GetPage "landing" }}
   {{ $services := $bundle.Resources.Match "service-*" }}
   {{ $abouts := $bundle.Resources.Match "about-*" }}
-  {{ $process := $bundle.Resources.Match "process*" }}
   
   <section class="landing-section w-full mx-auto mb-32 mt-16 md:mt-0">
     <div class="section-services w-full">
@@ -63,19 +62,6 @@
       {{ end }}
     </div>
   </section>
-
-  {{ range $process }}
-    <section class="landing-section section-process text-black mb-32 w-full max-w-2xl mx-auto opacity-0" data-once-enter="animated fadeInUp">
-      <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
-      <div>
-        {{ .Content }}
-        {{ $title := .Title }}
-        {{ with .Params.link }}
-          <p class="text-center"><a href="{{ . }}" class="link-button inverted">Läs mer om {{ $title }}</a></p>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
 
   {{ range $abouts }}
     <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto opacity-0" data-once-enter="animated fadeInUp">
