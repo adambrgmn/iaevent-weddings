@@ -6,4 +6,4 @@ menu: 'main'
 weight: 2
 ---
 
-Brudpar...
+<p style="text-align:center;">Mer information kommer snart</p>

@@ -5,4 +5,4 @@ draft: false
 menu: 'main'
 ---
 
-Inspiration
+<p style="text-align:center;">Mer information kommer snart</p>
