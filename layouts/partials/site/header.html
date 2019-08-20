@@ -1,5 +1,5 @@
 <header class="sticky top-0 w-screen flex items-center h-16 px-4 z-10 bg-white border-b border-black">
-  <div class="mr-6 lowercase tracking-wide z-20">
+  <div class="md:hidden mr-6 lowercase tracking-wide z-20">
     <h1 class="font-sans" data-content-both="-">
       <a href="{{ .Site.BaseURL }}">
         {{ .Site.Title }}
@@ -12,18 +12,30 @@
     <div class="toggle-menu-icon"></div>
   </button>
 
-  <nav class="menu">
-    <ul class="flex flex-col items-center justify-center md:flex-row md:justify-start">
+  <nav class="menu w-full">
+    <ul class="w-full flex flex-col items-center justify-center md:flex-row md:justify-around">
       {{ $currentPage := . }}
-      {{ range.Site.Menus.main }}
-      {{ $active := $currentPage.IsMenuCurrent "main" . }}
-      <li class="my-4 md:my-0">
-        <a href="{{ .URL }}" class="menu-link {{ if $active }}menu-link-active{{ end }}">
-          {{ .Pre }}
-          <span>{{ .Name }}</span>
-          {{ .Post }}
-        </a>
-      </li>
+      {{ $totalItems := len .Site.Menus.main }}
+
+      {{ range $i, $item := .Site.Menus.main }}
+        {{ $active := $currentPage.IsMenuCurrent "main" $item }}
+        <li class="my-4 md:my-0">
+          <a href="{{ $item.URL }}" class="menu-link {{ if $active }}menu-link-active{{ end }}">
+            {{ $item.Pre }}
+            <span>{{ $item.Name }}</span>
+            {{ $item.Post }}
+          </a>
+        </li>
+
+        {{ if eq $i 1 }}
+          <li class="hidden md:block my-6 lowercase tracking-wide z-20">
+            <h1 class="font-sans" data-content-both="-">
+              <a href="{{ $.Site.BaseURL }}">
+                {{ $.Site.Title }}
+              </a>
+            </h1>
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </nav>
