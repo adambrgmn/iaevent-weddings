@@ -41,13 +41,13 @@
   <section class="landing-section w-full mx-auto mb-32 mt-16 md:mt-0">
     <div class="section-services w-full">
       {{ range $services }}
-        <div class="section-service flex flex-wrap items-center opacity-0" data-once-enter="animated fadeInUp">
-          <div class="section-image w-full p-8 md:w-1/2">
+        <div class="section-service flex flex-wrap items-center">
+          <div class="section-image w-full p-8 md:w-1/2 opacity-0" data-once-enter="animated fadeInUp">
             {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
             <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
           </div>
 
-          <div class="section-content w-full md:w-1/2 p-8">
+          <div class="section-content w-full md:w-1/2 p-8 opacity-0" data-once-enter="animated fadeInUp delay">
             <div class="max-w-lg mx-auto">
               <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
               <div class="content text-base leading-snug">
@@ -73,14 +73,14 @@
   {{ end }}
 
   {{ range $abouts }}
-    <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto opacity-0" data-once-enter="animated fadeInUp">
-      <div class="flex flex-wrap">
+    <section class="landing-section section-about mb-32 w-full p-8 mx-auto opacity-0" data-once-enter="animated fadeInUp">
+      <div class="flex flex-wrap items-center">
         {{ with .Params.video }}
           {{ $base := replaceRE "image" "video" $.Site.Params.cloudinaryBase }}
-          {{ $src := print $base "ac_none,vc_auto,w_700/" . }}
+          {{ $src := print $base "ac_none,vc_auto,w_650/" . }}
           {{ $webm := replaceRE "(\\.\\w+)$" ".webm" $src }}
 
-          <div class="w-full mb-8">
+          <div class="w-full md:w-1/2 mb-8 md:mb-0">
             <video autoplay loop muted playsinline>
               <source src="{{ $webm }}" type="video/webm">
               <source src="{{ $src }}" type="video/mp4">
@@ -88,7 +88,7 @@
           </div>
         {{ end }}
         
-        <div class="section-content max-w-md mx-auto px-8">
+        <div class="section-content w-full md:w-1/2 mx-auto px-8">
           <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
           <div class="content text-base leading-snug">
             {{ .Content }}
