@@ -33,9 +33,12 @@ const init = rafSchd((parent: HTMLElement) => {
 
   for (let i = 0; i < blockquotes.length; i++) {
     const block = blockquotes[i];
-    block.style.width = `${parentDimensions.width}px`;
     removeClass(block, 'block', 'hidden');
     addClass(block, 'absolute');
+    block.style.width = `${parentDimensions.width}px`;
+    block.style.top = '0';
+    block.style.left = '0';
+
     if (i === 0) show(block);
     else hide(block);
   }
