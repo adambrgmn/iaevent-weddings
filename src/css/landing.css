@@ -1,18 +1,3 @@
-.landing-title {
-  position: relative;
-  margin-bottom: calc(theme('spacing.24') + theme('spacing.2') * 2);
-}
-
-.landing-title::after {
-  content: '';
-  position: absolute;
-  top: calc(100% + theme('spacing.2'));
-  left: calc(50% - (2px / 2));
-  width: 2px;
-  height: theme('spacing.24');
-  background-color: currentColor;
-}
-
 @screen md {
   .section-services .section-service:nth-child(2n) .section-content {
     order: 1;
