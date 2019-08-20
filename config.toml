@@ -17,7 +17,8 @@ disableAliases = true
   disallowSearchEngines = false # set robots.txt to disallow everything
   googleFonts = [
     "Montserrat:700",
-    "Work Sans:400,700"
+    "Work Sans:400,700",
+    "Playfair Display:400i"
   ]
   polyfills = [
     "IntersectionObserver",

@@ -7,3 +7,15 @@
     order: 2;
   }
 }
+
+.testimonials > *:not(blockquote) {
+  @apply hidden;
+}
+
+.testimonials > blockquote {
+  @apply font-serif italic;
+}
+
+.testimonials > blockquote em {
+  @apply block mt-4 font-sans not-italic;
+}

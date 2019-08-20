@@ -36,6 +36,7 @@
   {{ $bundle := $.Site.GetPage "landing" }}
   {{ $services := $bundle.Resources.Match "service-*" }}
   {{ $abouts := $bundle.Resources.Match "about-*" }}
+  {{ $testimonials := $bundle.Resources.GetMatch "testimonials*" }}
   
   <section class="landing-section w-full mx-auto mb-32 mt-16 md:mt-0">
     <div class="section-services w-full">
@@ -62,6 +63,14 @@
       {{ end }}
     </div>
   </section>
+
+  {{ with $testimonials }}
+  <section class="landing-section section-testimonials mb-32 p-12 w-full bg-tinted text-black opacity-0" data-once-enter="animated fadeIn">
+    <div class="testimonials w-full max-w-2xl mx-auto">
+      {{ .Content }}
+    </div>
+  </section>
+  {{ end }}
 
   {{ range $abouts }}
     <section class="landing-section section-about mb-32 w-full max-w-2xl mx-auto opacity-0" data-once-enter="animated fadeInUp">

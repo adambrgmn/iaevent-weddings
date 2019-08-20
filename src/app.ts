@@ -22,4 +22,14 @@ console.log(`${API_BASE}/hello`);
       watcher.on('enter', callback);
     }
   } catch (error) {}
+
+  try {
+    const testimonials = document.querySelector<HTMLDivElement>(
+      '.testimonials',
+    );
+    if (testimonials) {
+      const { init } = await import('./components/testimonial-slide');
+      init(testimonials);
+    }
+  } catch (error) {}
 })();

@@ -1,11 +1,10 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   theme: {
     extend: {
       colors: {
         black: '#333333',
         white: '#ffffff',
+        tinted: '#efeae7',
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',
@@ -21,7 +20,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Work Sans"', 'sans-serif'],
-      serif: defaultTheme.fontFamily.serif,
+      serif: ['"Playfair Display"', 'serif'],
       display: ['"Montserrat"', 'sans-serif'],
     },
   },
