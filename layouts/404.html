@@ -1,6 +1,8 @@
 {{ define "main" }}
-  <article>
-    <h1>Page Not Found!</h1>
-    <p>The page you requested could not be found.</p>
-  </article>
+<article class="mt-12 mx-auto max-w-2xl px-8">
+  <h1 class="page-title">Sidan kunde inte hittas</h1>
+  <div class="content text-center">
+    <p><a class="link-button" href="{{ "/" | relURL }}">Gå hem igen</a></p>
+  </div>
+</article>
 {{ end }}

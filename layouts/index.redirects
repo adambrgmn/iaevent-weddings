@@ -4,3 +4,5 @@
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
+
+/* /404.html 404
