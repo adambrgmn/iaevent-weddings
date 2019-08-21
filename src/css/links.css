@@ -1,14 +1,15 @@
-.link-button {
+a.link-button {
   @apply inline-block mx-auto border-2 border-black p-4 bg-white no-underline;
   transform: translateY(0px);
   transition: transform 0.3s ease-in-out;
 }
 
-.link-button:hover,
-.link-button:focus {
+a.link-button:hover,
+a.link-button:focus {
+  @apply text-black;
   transform: translateY(-2px);
 }
 
-.link-button.inverted {
+a.link-button.inverted {
   @apply border-white bg-black text-white;
 }

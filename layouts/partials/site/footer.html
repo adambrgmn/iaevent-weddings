@@ -19,14 +19,14 @@
     {{ $mail := $.Site.Params.contact.mail }}
     {{ $phone := $.Site.Params.contact.phone }}
     <ul>
-      <li>
+      <li class="mb-1">
         <a href="mailto:{{ $mail }}">
           <span class="icon baseline">{{ partial "site/icons.svg" "mail" }}</span>
           {{ $mail }}
         </a>
       </li>
-      <li>
-        <a href="tel:{{ $phone }}">
+      <li class="mb-1">
+        <a href="tel:{{ $phone | replaceRE "(\\s|-)" "" | replaceRE "^0" "+46" }}">
           <span class="icon baseline">{{ partial "site/icons.svg" "phone" }}</span>
           {{ $phone }}
         </a>
@@ -38,7 +38,7 @@
     {{ $instagram := $.Site.Params.social.instagram }}
     <ul>
       {{ range $key, $url := $.Site.Params.social }}
-        <li>
+        <li class="mb-1">
           <a href="{{ $url }}">
             <span class="icon baseline">{{ partial "site/icons.svg" $key }}</span>
             @weddingbyiaevent

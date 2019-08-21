@@ -26,7 +26,7 @@
 
 .input {
   @apply h-8 p-2 text-sm leading-none bg-white text-black;
-  min-width: theme('spacing.48');
+  min-width: theme('spacing.20');
 }
 
 .textarea {
