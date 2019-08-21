@@ -5,6 +5,8 @@ draft: false
 menu: 'main'
 type: 'about'
 image: 'v1566329770/ia-event/portra%cc%88tt-izabelle.jpg'
+images:
+  - 'https://res.cloudinary.com/adambrgmn/image/upload/c_fill,g_face,h_630,w_1200,x_0/v1566329770/ia-event/portra%CC%88tt-izabelle.jpg'
 link:
   text: 'Kom i kontakt med oss'
   url: '/kontakt'

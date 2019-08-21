@@ -13,7 +13,7 @@ disableAliases = true
 
 
 [params]
-  description = "..."
+  description = "Wedding by ia event arrangerar bröllop runt om i Göteborg och längs med Västkusten, men tar sig an uppdrag i hela Sverige och även utomlands."
   disallowSearchEngines = false # set robots.txt to disallow everything
   googleFonts = [
     "Montserrat:700",
@@ -25,14 +25,16 @@ disableAliases = true
     "requestAnimationFrame"
   ]
   cloudinaryBase = "https://res.cloudinary.com/adambrgmn/image/upload/"
-  instagramProfile = "https://www.instagram.com/weddingbyiaevent/"
+  images = [
+    "https://res.cloudinary.com/adambrgmn/image/upload/c_fill,h_630,w_1200/v1566382614/ia-event/social-cover.jpg"
+  ]
 
 [params.contact]
   phone = "076-336 19 88"
   mail = "wedding@iaevent.com"
 
-[params.social]
-  instagram = "https://www.instagram.com/weddingbyiaevent/"
+[social]
+  instagram = "weddingbyiaevent"
 
 # add redirects/headers
 [outputs]

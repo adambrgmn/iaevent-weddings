@@ -1,14 +1,16 @@
-<div class="px-4 py-12 max-w-2xl mx-auto">
-  <div class="mb-8">
-    <a href="{{ $.Site.Params.social.instagram }}" class="block flex flex-col justify-center items-center w-full text-center">
-      <span class="w-8 mb-2">
-        {{ partial "site/icons.svg" "instagram" }}
-      </span>
-      <span>Följ oss på Instagram<br>@weddingbyiaevent</span>
-    </a>
+{{ with $.Site.Social.instagram }}
+  <div class="px-4 py-12 max-w-2xl mx-auto">
+    <div class="mb-8">
+      <a href="http://www.instagram.com/{{ . }}" class="block flex flex-col justify-center items-center w-full text-center">
+        <span class="w-8 mb-2">
+          {{ partial "site/icons.svg" "instagram" }}
+        </span>
+        <span>Följ oss på Instagram<br>@{{ . }}</span>
+      </a>
+    </div>
+    <ul id="ig-feed" class="instagram-feed flex flex-nowrap justify-around justify-center"></ul>
   </div>
-  <ul id="ig-feed" class="instagram-feed flex flex-nowrap justify-around justify-center"></ul>
-</div>
+{{ end }}
 
 <footer class="z-0 flex flex-col md:flex-row justify-around px-8 pt-16 pb-24 bg-tinted">
   <div class="w-16 mb-8">
@@ -35,13 +37,12 @@
   </div>
 
   <div class="mb-8">
-    {{ $instagram := $.Site.Params.social.instagram }}
     <ul>
-      {{ range $key, $url := $.Site.Params.social }}
+      {{ range $key, $profile := $.Site.Social }}
         <li class="mb-1">
-          <a href="{{ $url }}">
+          <a href="http://www.{{ $key }}.com/{{ $profile }}">
             <span class="icon baseline">{{ partial "site/icons.svg" $key }}</span>
-            @weddingbyiaevent
+            @{{ $profile }}
           </a>
         </li>
       {{ end }}
