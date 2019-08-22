@@ -10,7 +10,7 @@
       <div class="w-full sm:w-1/2 sm:pr-4 sm:order-first">
         {{ $base := $.Site.Params.cloudinaryBase }}
         {{ $src := print $base "w_700/" . }}
-        <img src="{{ $src }}" alt="">
+        <img data-src="{{ $src }}" alt="" class="lazyload" width="700">
       </div>
     {{ end }}
   </div>

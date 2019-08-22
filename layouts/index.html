@@ -22,7 +22,7 @@
           <source data-srcset="{{ print $base "f_auto,c_fill,g_center,w_768/" $src }}" media="(min-width: 640px)" />
           <source data-srcset="{{ print $base "f_auto,c_fill,g_center,h_1640,w_640/" $src }}" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" />
           <source data-srcset="{{ print $base "f_auto,c_fill,g_center,h_820,w_320/" $src }}" />
-          <img class="lazyload jumbotron-image w-screen object-center object-cover" src="{{ print $base "f_auto,c_scale,w_200/" $src }}" data-src="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" alt="" />
+          <img class="lazyload jumbotron-image w-screen object-center object-cover" src="{{ print $base "f_auto,c_scale,w_200/" $src }}" data-src="{{ print $base "f_auto,c_fill,g_center,w_3000/" $src }}" alt="" width="3000" height="2000" />
         </picture>
       </div>
       <div class="jumbotron-logotype absolute w-1/2 md:w-1/4 text-white fill-current">
@@ -125,7 +125,7 @@
         <div class="w-full md:flex-1 md:ml-4">
           {{ $base := print $.Site.Params.cloudinaryBase "f_auto,ar_16:9,c_fill,g_center,w_750/" }}
           {{ range $idx, $url := .Params.images }}
-            <img data-src="{{ print $base $url }}" class="lazyload {{ cond (lt $idx 1) "mb-8" "" }}" alt="">
+            <img data-src="{{ print $base $url }}" class="lazyload {{ cond (lt $idx 1) "mb-8" "" }}" alt="" width="750" height="422">
           {{ end }}
         </div>
       </div>
