@@ -57,7 +57,8 @@
     Show it by running HUGO_CLIENT_ID=<instagram-client-id> yarn start:hugo
   -->
   <p>
-    {{ $query := querify "client_id" . "redirect_uri" "http://localhost:9000/.netlify/functions/handle-auth" "response_type" "code" }}
+    {{ $baseUrl := replace $.Site.BaseURL "1313" "9000" | replaceRE "^//" "http://" }}
+    {{ $query := querify "client_id" . "redirect_uri" (print $baseUrl ".netlify/functions/handle-auth") "response_type" "code" }}
     <a href="https://api.instagram.com/oauth/authorize/?{{ $query | safeURL }}">Sign in to Instagram</a>
   </p>
 {{ end }}

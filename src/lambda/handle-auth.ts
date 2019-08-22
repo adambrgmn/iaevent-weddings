@@ -56,11 +56,73 @@ export async function handler(
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     });
 
+    const body = `
+    <!doctype html>
+    <html>
+      <head>
+        <title>Instagram Auth Code</title>
+        <style>
+          body { padding: 0; }
+          
+          .wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+          }
+
+          .title, .code, .note {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          }
+
+          .title {
+            margin-bottom: 0.5rem;
+          }
+
+          .button {
+            margin: 0;
+            border: none;
+            padding: 1rem;
+            background: #e6e6e6;
+            font: inherit;
+            cursor: pointer;
+          }
+
+          .note {
+            font-size: 0.8rem;
+            margin-top: 2rem;
+          }
+        </style>
+
+        <script>
+          window.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.button');
+            btn.addEventListener('click', () => {
+              navigator.clipboard.writeText(btn.innerText)
+                .then(() => console.log('success'))
+                .catch(err => console.error(err));
+            });
+          });
+        </script>
+      </head>
+      <body>
+        <div class="wrapper">
+          <h1 class="title">AuthCode</h1>
+          <h2 class="code"><button type="button" class="button">${response.data.access_token}</button></h2>
+          <p class="note">Click to copy</p>
+        </div>
+      </body>
+    </html>
+    `;
+
     return {
       statusCode: 200,
-      body: JSON.stringify({ data: response.data, event }),
+      body,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'text/html; charset=utf-8',
         'Access-Control-Allow-Origin': '*',
       },
     };
