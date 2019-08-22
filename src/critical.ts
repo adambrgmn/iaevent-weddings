@@ -23,11 +23,24 @@ function enableLazyLoadings() {
       if (el.dataset.src) {
         el.setAttribute('loading', 'lazy');
         el.src = el.dataset.src;
-        el.onload = () => {
-          removeClass(el, 'lazyload');
-          addClass(el, 'lazyloaded');
-        };
+        if (el instanceof HTMLImageElement && el.dataset.srcset) {
+          el.srcset = el.dataset.srcset;
+        }
       }
+
+      if (el.parentElement instanceof HTMLPictureElement) {
+        const sources = el.parentElement.querySelectorAll('source');
+        sources.forEach(el => {
+          if (el.dataset.srcset) {
+            el.srcset = el.dataset.srcset;
+          }
+        });
+      }
+
+      el.onload = () => {
+        removeClass(el, 'lazyload');
+        addClass(el, 'lazyloaded');
+      };
     });
   } else if (elements.length > 0) {
     /**

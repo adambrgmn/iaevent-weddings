@@ -24,7 +24,8 @@ googleAnalytics = "UA-146122952-1"
   ]
   polyfills = [
     "IntersectionObserver",
-    "requestAnimationFrame"
+    "requestAnimationFrame",
+    "HTMLPictureElement"
   ]
   cloudinaryBase = "https://res.cloudinary.com/adambrgmn/image/upload/"
   images = [
