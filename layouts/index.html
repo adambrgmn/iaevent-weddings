@@ -51,13 +51,13 @@
     <div class="section-services w-full">
       {{ $idx := 0 }}
       {{ range sort $services "Title" "desc" }}
-        {{ $order := cond (modBool $idx 2) "order-first" "order-last" }}
+        {{ $order := cond (modBool $idx 2) "md:order-first" "md:order-last" }}
         {{ $idx = add $idx 1 }}
         <div class="section-service flex flex-wrap items-center opacity-0" data-once-enter="animated fadeIn">
           <div class="section-image simple-slide relative w-full p-8 md:w-1/2 {{ $order }}" data-interval="7500">
-            {{ $base := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500,q_100/" }}
+            {{ $base := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_750,h_750/" }}
             {{ range $idx, $img := .Params.images }}
-              <img data-src="{{ print $base $img }}" class="lazyload object-center object-cover w-full md:h-auto {{ cond (gt $idx 0) "hidden" ""}}" alt="" width="500" height="500" />
+              <img data-src="{{ print $base $img }}" class="object-center object-cover w-full md:h-auto {{ cond (gt $idx 0) "hidden" ""}}" alt="" width="500" height="500" />
             {{ end }}
           </div>
 

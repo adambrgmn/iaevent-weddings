@@ -1,6 +1,7 @@
 import rafSchd from 'raf-schd';
 import { from } from '../utils';
 import { addClass, removeClass } from '../utils/dom';
+import { watchElement } from '../utils/watch-element';
 
 const enterClass = 'fadeInRight';
 const leaveClass = 'fadeOutLeft';
@@ -44,11 +45,20 @@ const init = (parents: NodeListOf<HTMLElement>) => {
             const currentImage = images[idx];
             const nextImage = images[idx + 1] ? images[idx + 1] : images[0];
 
-            removeClass(currentImage, enterClass);
-            addClass(currentImage, leaveClass);
+            const transition = () => {
+              removeClass(currentImage, enterClass);
+              addClass(currentImage, leaveClass);
 
-            removeClass(nextImage, leaveClass);
-            addClass(nextImage, enterClass);
+              removeClass(nextImage, leaveClass);
+              addClass(nextImage, enterClass);
+            };
+
+            if (!nextImage.src) {
+              nextImage.addEventListener('load', transition);
+              nextImage.src = nextImage.dataset.src as string;
+            } else {
+              transition();
+            }
 
             idx = idx >= images.length - 1 ? 0 : idx + 1;
           }),
@@ -56,6 +66,10 @@ const init = (parents: NodeListOf<HTMLElement>) => {
         );
       });
 
+      const emitter = watchElement(container, { rootMargin: '200px' });
+      emitter.on('enter', () => {
+        images[0].src = images[0].dataset.src as string;
+      });
       images[0].addEventListener('load', onLoad);
     }
   }
