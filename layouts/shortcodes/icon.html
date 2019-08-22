@@ -1,0 +1,6 @@
+{{ $align := .Get "align" }}
+{{ with .Get "icon" }}
+<span class="icon {{ cond (eq $align "baseline") "baseline" "" }}">
+  {{ partial "site/icons.svg" . }}
+</span>
+{{ end }}

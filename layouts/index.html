@@ -34,15 +34,27 @@
 
 {{ define "main" }}
   {{ $bundle := $.Site.GetPage "landing" }}
+  {{ $topics := $bundle.Resources.GetMatch "topics*" }}
   {{ $services := $bundle.Resources.Match "service-*" }}
   {{ $abouts := $bundle.Resources.Match "about-*" }}
   {{ $testimonials := $bundle.Resources.GetMatch "testimonials*" }}
+
+  {{ with $topics }}
+  <section class="landing-section section-topics w-full max-w-6xl mx-auto my-16 px-8">
+    <div class="topics">
+      {{ .Content }}
+    </div>
+  </section>  
+  {{ end }}
   
   <section class="landing-section w-full mx-auto mb-32 mt-16 md:mt-0">
     <div class="section-services w-full">
-      {{ range $services }}
+      {{ $idx := 0 }}
+      {{ range sort $services "Title" "desc" }}
+        {{ $order := cond (modBool $idx 2) "order-first" "order-last" }}
+        {{ $idx = add $idx 1 }}
         <div class="section-service flex flex-wrap items-center">
-          <div class="section-image w-full p-8 md:w-1/2 opacity-0" data-once-enter="animated fadeInUp">
+          <div class="section-image w-full p-8 md:w-1/2 opacity-0 {{ $order }}" data-once-enter="animated fadeInUp">
             {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
             <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
           </div>
@@ -65,8 +77,8 @@
   </section>
 
   {{ with $testimonials }}
-  <section class="landing-section section-testimonials mb-24 p-12 w-full bg-tinted text-black overflow-x-hidden opacity-0" data-once-enter="animated fadeIn">
-    <div class="testimonials relative w-full max-w-2xl mx-auto">
+  <section class="landing-section section-testimonials mb-24 px-12 py-24 w-full bg-tinted text-black overflow-x-hidden opacity-0" data-once-enter="animated fadeIn">
+    <div class="testimonials relative w-full max-w-4xl mx-auto">
       {{ .Content }}
     </div>
   </section>

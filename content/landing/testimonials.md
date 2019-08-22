@@ -10,21 +10,3 @@ draft: false
 > med hennes arbete och hennes härliga sätt att vara.
 >
 > _– Mimmi & Sebastian_
-
-<p></p>
-
-> En av de saker som vi verkligen värdesatt under processen är att Izabelle har
-> en otrolig förmåga att visualisera tankar och tänker kreativt. [...] Vi kan
-> varmt rekommendera Izabelle och kan med säkerhet säga att ni kommer bli nöjda
-> med hennes arbete och hennes härliga sätt att vara.
->
-> _– Mimmi & Sebastian_
-
-<p></p>
-
-> En av de saker som vi verkligen värdesatt under processen är att Izabelle har
-> en otrolig förmåga att visualisera tankar och tänker kreativt. [...] Vi kan
-> varmt rekommendera Izabelle och kan med säkerhet säga att ni kommer bli nöjda
-> med hennes arbete och hennes härliga sätt att vara.
->
-> _– Mimmi & Sebastian_

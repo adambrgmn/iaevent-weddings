@@ -28,7 +28,7 @@ const getImages = async () => {
 
     const images = response.data.data.map(post => ({
       link: post.link,
-      image: post.images.thumbnail,
+      image: post.images.standard_resolution,
     }));
     return images;
   } catch (error) {
@@ -71,13 +71,20 @@ const init = async (parentEl: HTMLElement) => {
       listItemElement.style.animationDelay = `${50 * i}ms`;
 
       linkElement.href = entry.link;
-      addClass(linkElement, 'feed-link');
+      addClass(linkElement, 'feed-link', 'block', 'w-full', 'h-full');
 
       imageElement.src = entry.image.url;
       imageElement.width = entry.image.width;
       imageElement.height = entry.image.height;
       imageElement.setAttribute('loading', 'lazy');
-      addClass(imageElement, 'feed-thumbnail', 'w-full');
+      addClass(
+        imageElement,
+        'feed-thumbnail',
+        'w-full',
+        'h-full',
+        'object-cover',
+        'object-center',
+      );
 
       linkElement.appendChild(imageElement);
       listItemElement.appendChild(linkElement);

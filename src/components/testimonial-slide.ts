@@ -5,6 +5,8 @@ import { watchElement } from '../utils/watch-element';
 
 const init = rafSchd((parent: HTMLElement) => {
   const blockquotes = from(parent.querySelectorAll('blockquote'));
+  if (blockquotes.length < 2) return;
+
   for (let i = 0; i < blockquotes.length; i++) {
     const block = blockquotes[i];
     if (i === 0) addClass(block, 'block');
