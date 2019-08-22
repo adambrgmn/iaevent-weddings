@@ -53,13 +53,15 @@
       {{ range sort $services "Title" "desc" }}
         {{ $order := cond (modBool $idx 2) "order-first" "order-last" }}
         {{ $idx = add $idx 1 }}
-        <div class="section-service flex flex-wrap items-center">
-          <div class="section-image w-full p-8 md:w-1/2 opacity-0 {{ $order }}" data-once-enter="animated fadeInUp">
-            {{ $src := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" .Params.image }}
-            <img data-src="{{ $src }}" class="lazyload object-center object-cover w-full h-32 md:h-auto" alt="" />
+        <div class="section-service flex flex-wrap items-center opacity-0" data-once-enter="animated fadeIn">
+          <div class="section-image simple-slide relative w-full p-8 md:w-1/2 {{ $order }}" data-interval="7500">
+            {{ $base := print $.Site.Params.cloudinaryBase "f_auto,c_fill,g_center,w_500,h_500/" }}
+            {{ range $idx, $img := .Params.images }}
+              <img data-src="{{ print $base $img }}" class="lazyload object-center object-cover w-full md:h-auto {{ cond (gt $idx 0) "hidden" ""}}" alt="" width="500" height="500" />
+            {{ end }}
           </div>
 
-          <div class="section-content w-full md:w-1/2 p-8 opacity-0" data-once-enter="animated fadeInUp delay">
+          <div class="section-content w-full md:w-1/2 p-8">
             <div class="max-w-lg mx-auto">
               <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
               <div class="content text-base leading-snug">

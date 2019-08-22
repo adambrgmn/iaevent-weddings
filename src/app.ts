@@ -11,6 +11,16 @@ console.log(`${API_BASE}/hello`);
   onEnter.init();
 
   try {
+    const slideParents = document.querySelectorAll<HTMLElement>(
+      '.simple-slide',
+    );
+    if (slideParents.length > 0) {
+      const simpleSlide = await import('./components/simple-slide');
+      simpleSlide.init(slideParents);
+    }
+  } catch (err) {}
+
+  try {
     const igFeedParent = document.getElementById('ig-feed');
     if (igFeedParent) {
       const watcher = watchElement(igFeedParent, { rootMargin: '100px' }, true);
