@@ -10,7 +10,7 @@ images:
 link: '/tjanster'
 ---
 
-Ett bröllops visuella uttryck är en stor och viktig aspekt som det är värt att
-lägga tanke och tid på. Bröllopsdesign innebär att skapa en miljö och känsla som
-genomsyrar hela bröllopet. Utifrån era önskningar, stil och personlighet så tar
-jag fram en design just för er.
+En bröllopsdag ska vara utöver det vanliga och det är många beslut som ska tas
+för att den stora dagen skall bli just så som ni önskar. Jag hjälper er med
+besluten kring att planera och organisera upp ert stundande bröllop så att ni
+kan få ro och vägledning hela vägen fram.

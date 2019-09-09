@@ -25,5 +25,5 @@
 }
 
 .testimonials > blockquote em {
-  @apply block mt-4 font-sans not-italic;
+  @apply block mt-4 font-serif italic;
 }

@@ -1,8 +1,9 @@
 <header class="sticky top-0 w-screen flex items-center h-16 px-4 z-10 bg-white border-b border-black">
-  <div class="md:hidden mr-6 lowercase tracking-wide z-20">
-    <h1 class="font-sans" data-content-both="-">
+  <div class="w-12 mr-6 lowercase tracking-wide z-20">
+    <h1 class="font-sans">
       <a href="{{ .Site.BaseURL }}">
-        {{ .Site.Title }}
+        <span class="sr-only">{{ .Site.Title }}</span>
+        {{ partial "site/logotype.svg" . }}
       </a>
     </h1>
   </div>
@@ -26,16 +27,6 @@
             {{ $item.Post }}
           </a>
         </li>
-
-        {{ if eq $i 1 }}
-          <li class="hidden md:block my-6 lowercase tracking-wide z-20">
-            <h1 class="font-sans" data-content-both="-">
-              <a href="{{ $.Site.BaseURL }}">
-                {{ $.Site.Title }}
-              </a>
-            </h1>
-          </li>
-        {{ end }}
       {{ end }}
     </ul>
   </nav>

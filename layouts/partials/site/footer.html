@@ -13,11 +13,11 @@
 {{ end }}
 
 <footer class="z-0 flex flex-col md:flex-row justify-around px-8 pt-16 pb-24 bg-tinted">
-  <div class="w-16 mb-8">
+  <div class="w-32 mb-8">
     {{ partial "site/logotype.svg" . }}
   </div>
 
-  <div class="mb-8">
+  <div class="mb-8 text-lg">
     {{ $mail := $.Site.Params.contact.mail }}
     {{ $phone := $.Site.Params.contact.phone }}
     <ul>
@@ -36,13 +36,12 @@
     </ul>
   </div>
 
-  <div class="mb-8">
-    <ul>
+  <div class="mb-8 text-2xl">
+    <ul class="flex flex-row">
       {{ range $key, $profile := $.Site.Social }}
-        <li class="mb-1">
+        <li class="mr-4">
           <a href="http://www.{{ $key }}.com/{{ $profile }}">
             <span class="icon baseline">{{ partial "site/icons.svg" $key }}</span>
-            @{{ $profile }}
           </a>
         </li>
       {{ end }}
