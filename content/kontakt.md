@@ -6,15 +6,15 @@ menu: 'main'
 weight: 5
 ---
 
-Det finns olika sätt att kontakta oss på, välj något av följande:
+Första mötet är alltid kostnadsfritt. Där berättar jag mer om vad jag kan göra
+för er och får en bild över era tankar och önskemål. Efter att vi pratat ihop
+oss på telefon eller via Skype får ni en offert baserat på era behov.
 
-- Skicka mail till [wedding@iaevent.se](mailto:wedding@iaevent.se)
-- Ring [076-336 19 88](tel:0763361988) så tar vi ett snack
-- Eller kontakta oss via
-  [Instagram @weddingbyiaevent](https://www.instagram.com/weddingbyiaevent/)
-- **Eller fyll i formuläret här nedanför så återkommer vi inom två
-  arbetsadagar.**
+Önskar du min hjälp eller är intresserad av ett samarbete? Maila till
+[wedding@iaevent.se](mailto:wedding@iaevent.se) eller ring 076-336 19 88 så
+pratar vi ihop oss på telefon
 
-Efter att vi talat ihop oss får ni en offert baserad på era behov.
+Vid förfrågan vänligen fyll i formuläret nedan. Jag återkommer inom en
+arbetsdag.
 
 {{< estimate-request-form >}}
