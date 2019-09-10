@@ -1,18 +1,22 @@
+.topics h2 {
+  @apply font-bold text-xl uppercase text-center mb-8;
+}
+
 .topics ul {
   @apply flex flex-wrap justify-between items-start w-full font-display uppercase;
 }
 
 .topics li {
-  @apply flex flex-col justify-center items-center w-1/2 mb-8 text-lg text-center;
+  @apply flex flex-col justify-center items-center w-1/2 mb-8 text-sm text-center;
 }
 
 .topics .icon {
-  @apply text-4xl mb-4;
+  @apply text-3xl mb-4;
 }
 
 @screen sm {
   .topics li {
-    @apply w-auto mb-0;
+    @apply w-auto mb-0 text-base;
   }
 }
 
