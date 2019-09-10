@@ -80,7 +80,7 @@
   </section>
 
   {{ with $testimonials }}
-  <section class="landing-section section-testimonials relative mb-24 px-24 py-24 w-full bg-tinted text-black overflow-x-hidden opacity-0" data-once-enter="animated fadeIn">
+  <section class="landing-section section-testimonials relative mb-24 p-8 md:p-24 w-full bg-tinted text-black overflow-x-hidden opacity-0" data-once-enter="animated fadeIn">
     <div class="testimonials relative w-full max-w-4xl mx-auto">
       {{ .Content }}
     </div>
@@ -95,7 +95,7 @@
           {{ $src := print $base "ac_none,vc_auto,w_650/" . }}
           {{ $webm := replaceRE "(\\.\\w+)$" ".webm" $src }}
 
-          <div class="w-full md:w-1/2 mb-8 md:mb-0 opacity-0" data-once-enter="animated fadeInUp">
+          <div class="w-full md:w-1/2 mb-8 md:mb-0 md:px-8 opacity-0" data-once-enter="animated fadeInUp">
             <video autoplay loop muted playsinline>
               <source src="{{ $webm }}" type="video/webm">
               <source src="{{ $src }}" type="video/mp4">
@@ -103,7 +103,7 @@
           </div>
         {{ end }}
         
-        <div class="section-content w-full md:w-1/2 max-w-lg mx-auto opacity-0 delay" data-once-enter="animated fadeInUp">
+        <div class="section-content w-full md:w-1/2 max-w-lg md:px-8 opacity-0 delay" data-once-enter="animated fadeInUp">
           <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
           <div class="content text-base leading-snug">
             {{ .Content }}
