@@ -40,8 +40,9 @@
     <ul class="flex flex-row">
       {{ range $key, $profile := $.Site.Social }}
         <li class="mr-4">
-          <a href="http://www.{{ $key }}.com/{{ $profile }}">
+          <a href="https://www.{{ $key }}.com/{{ $profile }}">
             <span class="icon baseline">{{ partial "site/icons.svg" $key }}</span>
+            <span class="sr-only">@{{ $profile }} på {{ $key }}</span>
           </a>
         </li>
       {{ end }}
