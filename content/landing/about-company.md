@@ -1,5 +1,5 @@
 ---
-title: 'Möte ia event'
+title: 'Vart finns vi?'
 date: 2019-08-22T11:01:10+02:00
 draft: false
 images:
