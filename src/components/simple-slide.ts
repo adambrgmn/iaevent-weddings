@@ -32,11 +32,7 @@ const init = (parents: NodeListOf<HTMLElement>) => {
           image.style.bottom = `${padding}px`;
           image.style.right = `${padding}px`;
 
-          if (image !== images[0]) {
-            addClass(image, 'opacity-0');
-          } else {
-            addClass(image, enterClass);
-          }
+          if (image !== images[0]) addClass(image, 'opacity-0');
         }
 
         let idx = 0;
