@@ -4,6 +4,8 @@ date: 2019-07-04T18:31:24+02:00
 draft: false
 menu: 'main'
 weight: 2
+images:
+  - 'https://res.cloudinary.com/adambrgmn/image/upload/c_fill,g_face,h_630,w_1200,x_0/v1568316350/ia-event/Bro%CC%88llopsdetaljer.jpg'
 link:
   text: 'För fler bilder på utbud maila wedding@iaevent.se'
   url: 'mailto:wedding@iaevent.se'
