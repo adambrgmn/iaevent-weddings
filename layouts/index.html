@@ -64,7 +64,7 @@
 
           <div class="section-content w-full md:w-1/2 p-8">
             <div class="max-w-lg mx-auto">
-              <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
+              <h2 class="section-title">{{ .Title }}</h2>
               <div class="content text-base leading-snug">
                 {{ .Content }}
                 {{ $title := .Title }}
@@ -104,7 +104,7 @@
         {{ end }}
         
         <div class="section-content w-full md:w-1/2 max-w-lg md:px-8 opacity-0 delay" data-once-enter="animated fadeInUp">
-          <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
+          <h2 class="section-title">{{ .Title }}</h2>
           <div class="content text-base leading-snug">
             {{ .Content }}
             {{ with .Params.link }}
@@ -127,7 +127,7 @@
         </div>
         <div class="w-full md:flex-1 md:ml-4 flex flex-col">
           <div class="flex-1 flex flex-col justify-center mb-8 p-8 border-4 border-black">
-            <h2 class="mb-8 font-display font-bold text-xl text-center uppercase tracking-wider">{{ .Title }}</h2>
+            <h2 class="section-title">{{ .Title }}</h2>
             {{ .Content }}
           </div>
           <div>

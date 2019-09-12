@@ -1,8 +1,15 @@
 {{ define "main" }}
 <article class="mt-12 mx-auto w-full">
   <h1 class="page-title">{{ .Title }}</h1>
-  <div class="content">
+
+  <div class="content mb-8">
     {{ .Content }}
   </div>
+
+  {{ with .Params.link }}
+    <div class="w-full max-w-4xl m-auto text-center p-8">
+      <a class="link-button" href="{{ .url }}">{{ .text }}</a>
+    </div>
+  {{ end }}
 </article>
 {{ end }}

@@ -1,3 +1,7 @@
+.section-title {
+  @apply mb-8 font-display font-bold text-xl text-center uppercase tracking-wider;
+}
+
 .topics h2 {
   @apply font-bold text-xl uppercase text-center mb-8;
 }

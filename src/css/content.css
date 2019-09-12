@@ -33,3 +33,7 @@
 .content ul {
   @apply list-disc;
 }
+
+.content h3 {
+  @apply mb-3 font-display font-bold text-lg text-left uppercase tracking-wider;
+}
