@@ -20,3 +20,8 @@
   position: absolute;
   bottom: -0.125em;
 }
+
+.icon.use-fill svg {
+  fill: currentColor;
+  stroke: none;
+}

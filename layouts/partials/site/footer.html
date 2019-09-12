@@ -1,8 +1,8 @@
 {{ with $.Site.Social.instagram }}
   <div class="px-4 py-12 w-full mx-auto">
     <div class="mb-8">
-      <a href="http://www.instagram.com/{{ . }}" class="block flex flex-col justify-center items-center w-full text-center">
-        <span class="w-8 mb-2">
+      <a href="http://www.instagram.com/{{ . }}" class="block flex flex-col justify-center items-center w-full text-center hover:text-gray-500">
+        <span class="icon text-4xl mb-2">
           {{ partial "site/icons.svg" "instagram" }}
         </span>
         <span>Följ oss på <br>@{{ . }}</span>
@@ -22,13 +22,13 @@
     {{ $phone := $.Site.Params.contact.phone }}
     <ul>
       <li class="mb-1">
-        <a href="mailto:{{ $mail }}">
+        <a href="mailto:{{ $mail }}" class="hover:text-gray-500">
           <span class="icon baseline">{{ partial "site/icons.svg" "mail" }}</span>
           {{ $mail }}
         </a>
       </li>
       <li class="mb-1">
-        <a href="tel:{{ $phone | replaceRE "(\\s|-)" "" | replaceRE "^0" "+46" }}">
+        <a href="tel:{{ $phone | replaceRE "(\\s|-)" "" | replaceRE "^0" "+46" }}" class="hover:text-gray-500">
           <span class="icon baseline">{{ partial "site/icons.svg" "phone" }}</span>
           {{ $phone }}
         </a>
@@ -36,12 +36,12 @@
     </ul>
   </div>
 
-  <div class="mb-8 text-2xl">
+  <div class="mb-8 text-4xl">
     <ul class="flex flex-row">
       {{ range $key, $profile := $.Site.Social }}
         <li class="mr-4">
-          <a href="https://www.{{ $key }}.com/{{ $profile }}">
-            <span class="icon baseline">{{ partial "site/icons.svg" $key }}</span>
+          <a href="https://www.{{ $key }}.com/{{ $profile }}" class="text-black hover:text-gray-500">
+            <span class="icon baseline {{ cond (eq $key "pintrest") "use-fill" "" }}">{{ partial "site/icons.svg" $key }}</span>
             <span class="sr-only">@{{ $profile }} på {{ $key }}</span>
           </a>
         </li>
