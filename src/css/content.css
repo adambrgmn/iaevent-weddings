@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .page-title {
   @apply relative font-display font-bold text-4xl text-center uppercase;
   margin-bottom: calc(theme('spacing.24') + theme('spacing.4'));
@@ -37,3 +38,4 @@
 .content h3 {
   @apply mb-3 font-display font-bold text-lg text-left uppercase tracking-wider;
 }
+/*! purgecss end ignore */
