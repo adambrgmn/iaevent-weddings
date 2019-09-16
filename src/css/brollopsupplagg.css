@@ -1,0 +1,22 @@
+.solutions-grid {
+  @apply max-w-4xl mx-auto px-4;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: theme('spacing.4');
+  grid-row-gap: theme('spacing.4');
+}
+
+.solutions-grid > * {
+  padding-top: calc(100% / 2);
+}
+
+@screen sm {
+  .solutions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .solutions-grid > * {
+    padding-top: 100%;
+  }
+}

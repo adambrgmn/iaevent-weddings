@@ -8,3 +8,5 @@
 /assets
 
 /.cache
+# Local Netlify folder
+.netlify

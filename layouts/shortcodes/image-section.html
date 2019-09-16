@@ -1,13 +1,15 @@
-<div class="flex flex-row flex-wrap w-full max-w-full py-8">
-  <div class="content flex items-center w-full sm:w-1/2 pb-8 sm:pl-4">
-    <div class="sm:px-12">
+{{ $order := default "order-last" (.Get "order") }}
+
+<div class="flex flex-row flex-wrap w-full max-w-full py-4">
+  <div class="content flex items-center w-full sm:w-1/2 sm:pb-0 sm:pr-4">
+    <div class="px-0 sm:px-12">
       {{- .Inner | markdownify -}}
     </div>
   </div>
   {{ with .Get "src" }}
-    <div class="w-full sm:w-1/2 pb-8 sm:pb-0 sm:pr-4 order-first sm:order-last">
+    <div class="w-full sm:w-1/2 pb-8 sm:pb-0 sm:pr-4 order-first sm:{{ $order }}">
       {{ $base := $.Site.Params.cloudinaryBase }}
-      {{ $src := print $base "w_700,h_700/" . }}
+      {{ $src := print $base "w_700,h_700,c_fill,f_auto/" . }}
       <img data-src="{{ $src }}" alt="" class="lazyload w-full h-full object-contain" width="700" height="700">
     </div>
   {{ end }}
