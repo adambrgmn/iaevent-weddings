@@ -1,5 +1,15 @@
 {{ $icon := . }}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  {{ with (eq $icon "arrow-left") }}
+    <line x1="19" y1="12" x2="5" y2="12"></line>
+    <polyline points="12 19 5 12 12 5"></polyline>
+  {{ end }}
+
+  {{ with (eq $icon "arrow-right") }}
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  {{ end }}
+  
   {{ with (eq $icon "clipboard") }}
     <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
     <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
