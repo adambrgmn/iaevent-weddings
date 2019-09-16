@@ -1,0 +1,9 @@
+<div class="relative w-full max-w-4xl my-8 p-12 border-black border-2">
+  <span
+    class="absolute block inset-x-0 top-0 mx-auto text-center font-display font-bold uppercase tracking-widest"
+    style="transform: translateY(-50%)"
+  >
+    <span class="px-4 py-2 bg-white">Tips</span>
+  </span>
+  {{ .Inner | markdownify }}
+</div>
