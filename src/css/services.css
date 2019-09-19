@@ -1,4 +1,4 @@
-.solutions-grid {
+.services-grid {
   @apply max-w-4xl mx-auto px-4;
 
   display: grid;
@@ -7,34 +7,34 @@
   grid-row-gap: theme('spacing.4');
 }
 
-.solutions-grid > * {
-  padding-top: calc(100% / 2);
+.services-grid > * {
+  padding-top: 33%;
 }
 
-.solutions-list-link {
+.services-list-link {
   background: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
 }
 
-.solutions-list-link span {
+.services-list-link span {
   @apply p-4 font-display font-bold text-lg text-center uppercase;
-  transition: background 0.3s ease-in-out;
 }
 
-.solutions-list-link:hover span {
+.services-list-link:hover span {
   @apply bg-white;
 }
 
 @screen sm {
-  .solutions-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .solutions-grid > * {
+  .services-grid > * {
     padding-top: 100%;
   }
 
-  .solutions-list-link span {
-    @apply text-sm;
+  .services-grid > *:last-child {
+    grid-column: 1 / -1;
+    padding-top: 50%;
   }
 }

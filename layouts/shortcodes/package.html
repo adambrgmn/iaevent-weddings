@@ -1,0 +1,18 @@
+{{ $title := .Get "title" }}
+{{ $imageBase := $.Site.Params.cloudinaryBase }}
+
+<div class="w-full sm:w-1/2 px-4 mb-12">
+  <div>
+    {{ with .Get "image" }}
+      <img class="lazyload block w-full mb-4 pt-4" src="{{ print $imageBase "f_auto,c_fill,g_center,w_550,ar_4:3/" . }}" alt="" />
+    {{ end }}
+  </div>
+  <div class="-mt-24">
+    <h3 class="mb-3 font-display font-bold text-xl uppercase tracking-wider text-center">
+      <span class="inline-block py-8 px-16 bg-white text-black">{{ $title }}</span>
+    </h3>
+    <div class="content px-6">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</div>

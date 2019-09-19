@@ -5,5 +5,3 @@ draft: false
 menu: 'main'
 weight: 1
 ---
-
-<p style="text-align:center;">Mer information kommer snart</p>
