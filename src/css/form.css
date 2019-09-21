@@ -25,16 +25,22 @@
 }
 
 .input {
-  @apply h-8 p-2 text-sm leading-none bg-white text-black;
+  @apply h-8 p-2 text-sm leading-none bg-transparent border-b border-black text-black;
   min-width: theme('spacing.20');
 }
 
 .textarea {
-  @apply w-full p-2 text-sm leading-normal bg-white text-black;
+  @apply w-full p-2 text-sm leading-normal bg-transparent border-b border-black text-black;
+}
+
+.input:focus,
+.textarea:focus {
+  @apply bg-white;
+  outline: none;
 }
 
 .submit-button {
-  @apply border-2 border-black p-2 text-sm bg-white no-underline;
+  @apply border-2 border-black p-2 text-sm bg-white no-underline self-center;
   transform: translateY(0px);
   transition: transform 0.3s ease-in-out;
 }
