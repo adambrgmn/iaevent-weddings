@@ -60,13 +60,7 @@ const init = async (parentEl: HTMLElement) => {
       const linkElement = document.createElement('a');
       const imageElement = document.createElement('img');
 
-      addClass(
-        listItemElement,
-        'feed-list-item',
-        'p-1',
-        'animated',
-        'fadeInRight',
-      );
+      addClass(listItemElement, 'feed-list-item', 'p-1', 'animated', 'fadeIn');
       listItemElement.style.maxWidth = `${expectedWidth}px`;
       listItemElement.style.animationDelay = `${50 * i}ms`;
 

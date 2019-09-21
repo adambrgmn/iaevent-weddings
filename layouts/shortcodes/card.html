@@ -21,7 +21,7 @@ Content of second card
 
 {{ $columnWidth := cond (eq $columns "even") "w-1/2 md:w-1/4" "w-full md:w-1/3" }}
 
-<div class="card {{ $columnWidth }} items-stretch p-4 opacity-0" data-once-enter="animated fadeInUp">
+<div class="card {{ $columnWidth }} items-stretch p-4">
   {{ with .Get "image" }}
     <img class="lazyload card-image w-full mb-4 pt-4" src="{{ print $imageBase "f_auto,c_fill,g_center,w_250,ar_3:4/" . }}" alt="" />
   {{ end }}
