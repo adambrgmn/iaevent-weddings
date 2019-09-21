@@ -55,7 +55,7 @@ paketöppning.
 blomvägg, båge, ram eller pelare som med växter, blommor, ballonger eller ljus
 skapar en storslagen känsla och markerar er plats under vigselakten.{{< /tip >}}
 
-I detta förslag målar vi upp en bröllopsweekend på fantastiska Pensionat Skäret
+_I detta förslag målar vi upp en bröllopsweekend på fantastiska Pensionat Skäret
 på Styrsö utanför Göteborg. En härlig samarbetspartner som vi gärna bokar.
 [Kontakta Wedding by ia event](/kontakt) för fler förslag och skräddarsytt
-paket.
+paket._

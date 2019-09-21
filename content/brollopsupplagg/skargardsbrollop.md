@@ -29,8 +29,8 @@ Kan varmt rekommendera kebabrullen som gästerna kan hugga med sig på båtturen
 hem för att stilla sin hunger. Det sätter pricken över i:et och garanterat något
 de kommer komma ihåg, jag lovar!.{{< /tip >}}
 
-I detta förslag har vi med en vigsel på Strömmas St:Erik, en leverantör som
+_I detta förslag har vi med en vigsel på Strömmas St:Erik, en leverantör som
 löser transport med stil. Vi bygger även upp en bröllopsfest utifrån mycket
 trevliga restaurang Knarrholmen som står får många av de härliga bilderna ovan.
-Några vi gärna samarbetar med. Kontakta Wedding by ia event för skräddarsytt
-paket eller samarbete.
+Några vi gärna samarbetar med. [Kontakta Wedding by ia event](/kontakt) för fler
+förslag och skräddarsytt paket._

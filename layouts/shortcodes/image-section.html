@@ -6,10 +6,11 @@
       {{- .Inner | markdownify -}}
     </div>
   </div>
+  {{ $format := .Get "format" | default "w_700,h_700,c_fill,f_auto/" }}
   {{ with .Get "src" }}
     <div class="w-full sm:w-1/2 pb-8 sm:pb-0 sm:pr-4 order-first sm:{{ $order }}">
       {{ $base := $.Site.Params.cloudinaryBase }}
-      {{ $src := print $base "w_700,h_700,c_fill,f_auto/" . }}
+      {{ $src := print $base $format . }}
       <img data-src="{{ $src }}" alt="" class="lazyload w-full h-full object-contain" width="700" height="700">
     </div>
   {{ end }}

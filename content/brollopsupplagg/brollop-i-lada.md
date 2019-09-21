@@ -50,8 +50,9 @@ dekoration och gärna ett tema som ”memory lane” där det är fotografier av
 brudparet från barnsben till tonår, när de först började dejta och deras resa
 fram tills idag. Eller varför inte ett klassiskt photobooth.{{< /tip >}}
 
-I detta förslag vill vi att ni skall få en känsla av hur bröllop i lada kan bli.
-Vi har kontakt med flera härliga lador runt Göteborg och i landet. När det
+_I detta förslag vill vi att ni skall få en känsla av hur bröllop i lada kan
+bli. Vi har kontakt med flera härliga lador runt Göteborg och i landet. När det
 kommer till catering så rekommenderar vi mer än gärna BohoBar som vi samarbetar
 med. De står även för en del av ljuvliga bilder ovan.
-[Kontakta Wedding by ia event](/kontakt) för skräddarsytt paket eller samarbete.
+[Kontakta Wedding by ia event](/kontakt) för skräddarsytt paket eller
+samarbete._
