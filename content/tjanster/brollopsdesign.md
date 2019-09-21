@@ -29,24 +29,27 @@ om ni vill ha hjälp med allt eller vissa delar för att skapa ert drömbröllop
 Vi skapar ett koncept utefter era önskemål och stil för att sedan implementera
 det i dekor och dukning. Vi skapar, hyr eller köper in passande dekor och bygger
 upp en känsla som ger den stämningen vi vill åt. Vi använder alla tänkbara
-material för att skapa den miljö som passar in just för er. Vintage, modernt,
-tyger, ballonger, växtlighet, ljus, industri ja det finns egentligen inga
-gränser. – inte ha med lr utveckla till något bättre? {{< /card >}}
+material för att skapa den miljö som passar in just för er. {{< /card >}}
 
 {{< card title="Blommor" image="v1568921038/ia-event/blommor-bro%CC%88llop.jpg" >}}
 Blommor och växter hör bröllop till och skapar något utöver det vanliga. Vi
 hjälper er med bordsarrangemang, blommor för utsmyckning till vigseln,
-blomsterväggar, vigselramar m.m. {{< /card >}}
+blomsterväggar, vigselramar m.m. Vi skapar mycket själva men arbetar också
+tillsammans med duktiga samarbetspartners för att leverera just det ni är ute
+efter. {{< /card >}}
 
 {{< card title="Tryck" image="v1568921038/ia-event/Tryck-Bro%CC%88llopsinbjudan.jpg" >}}
 Vi designar personliga ”save the date” och inbjudningskort, namnskyltar,
 menykort och bordplaceringsskyltar just för er och som passar den stil ni vill
-åt och förmedla på ert bröllop. {{< /card >}}
+åt och förmedla på ert bröllop. Vi har både färdig design eller så tar vi fram
+ett personligt uttryck just för er. Pris sker på förfrågningar utefter val av
+design och material. {{< /card >}}
 
 {{< card title="Service" image="v1568921037/ia-event/Service-bro%CC%88llopskoordinator.jpg" >}}
-Vi löser så att allt som ni bokat är på plats i tid och uppfyller era krav (?).
-Vi tar även hand om ned montering, så ni behöver inte tänka på något praktiskt i
-fråga när ni anlitar Wedding by ia event. Vi ger er den servicen ni behöver.
+Vi löser så att allt som ni bokat är på plats i tid och uppfyller det som vi
+kommit överens om. Förutom att styla och dekorera inför ert bröllop eller event
+så tar vi även hand om ned montering, ni behöver inte tänka på något praktiskt i
+fråga när ni anlitar Wedding by ia event. Vi ger er den servicen ni behöver.
 {{< /card >}}
 
 {{< /card-list >}}
