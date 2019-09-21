@@ -10,7 +10,7 @@
   @apply flex flex-wrap justify-between items-start w-full font-display uppercase;
 }
 
-.topics li {
+.topics li a {
   @apply flex flex-col justify-center items-center w-1/2 mb-8 text-sm text-center;
 }
 

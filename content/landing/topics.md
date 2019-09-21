@@ -6,7 +6,11 @@ draft: false
 
 ## Vi skräddarsyr ert bröllop
 
-- {{< icon icon="clipboard" >}} <span>Koordinering</span>
-- {{< icon icon="sun" >}} <span>Dekor</span>
-- {{< icon icon="flower" >}} <span>Blommor</span>
-- {{< icon icon="image" >}} <span>Inbjudningar <br />& tryck</span>
+- <a href="/tjanster/brollopsplanering">{{< icon icon="clipboard" >}}
+  <span>Koordinering</span></a>
+- <a href="/tjanster/brollopsdesign">{{< icon icon="sun" >}}
+  <span>Dekor</span></a>
+- <a href="/tjanster/brollopsdesign">{{< icon icon="flower" >}}
+  <span>Blommor</span></a>
+- <a href="/tjanster/brollopsdesign">{{< icon icon="image" >}}
+  <span>Inbjudningar <br />& tryck</span></a>
