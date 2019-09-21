@@ -3,7 +3,7 @@ title: 'Vart finns vi?'
 date: 2019-08-22T11:01:10+02:00
 draft: false
 images:
-  - 'v1566464580/ia-event/file7-1.jpg'
+  - 'v1569098513/ia-event/Bro%CC%88llopsdesign-italien.jpg'
   - 'v1566464580/ia-event/Bro%CC%88llopsvigsel.jpg'
 ---
 
