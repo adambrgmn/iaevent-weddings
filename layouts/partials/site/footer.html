@@ -12,7 +12,7 @@
   </div>
 {{ end }}
 
-<footer class="z-0 flex flex-col md:flex-row justify-around px-8 pt-16 pb-24 bg-tinted">
+<footer class="z-0 flex flex-col md:flex-row justify-around px-8 pt-16 pb-24 bg-black text-white">
   <div class="w-32 mb-8">
     {{ partial "site/logotype.svg" . }}
   </div>
@@ -40,8 +40,8 @@
     <ul class="flex flex-row">
       {{ range $key, $profile := $.Site.Social }}
         <li class="mr-4">
-          <a href="https://www.{{ $key }}.com/{{ $profile }}" class="text-black hover:text-gray-500">
-            <span class="icon baseline {{ cond (eq $key "pintrest") "use-fill" "" }}">{{ partial "site/icons.svg" $key }}</span>
+          <a href="https://www.{{ $key }}.com/{{ $profile }}" class="hover:text-gray-500">
+            <span class="icon baseline {{ cond (eq $key "pinterest") "use-fill" "" }}">{{ partial "site/icons.svg" $key }}</span>
             <span class="sr-only">@{{ $profile }} på {{ $key }}</span>
           </a>
         </li>

@@ -4,6 +4,7 @@
   align-self: center;
   width: 1em;
   height: 1em;
+  color: currentColor;
 }
 
 .icon svg {

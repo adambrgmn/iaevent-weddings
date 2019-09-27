@@ -3,11 +3,12 @@ title: Bröllopsplanering
 date: 2019-07-04T18:31:24+02:00
 draft: false
 images:
-  - 'v1566462839/ia-event/_MG_2201.jpg'
-  - 'v1566462839/ia-event/_MG_2796.jpg'
-  - 'v1566462839/ia-event/_MG_3323.jpg'
-  - 'v1566462898/ia-event/_MG_4573.jpg'
-  - 'v1566462936/ia-event/_MG_4944.jpg'
+  - v1569613163/ia-event/1.brudpar.jpg
+  - v1569613164/ia-event/2.brudgum.jpg
+  - v1569613164/ia-event/3.brudbukett-pioner.jpg
+  - v1569613163/ia-event/4.Bro%CC%88llop-mingel-snacks.jpg
+  - v1569613162/ia-event/5._bro%CC%88llopsta%CC%8Arta.jpg
+  - v1569613165/ia-event/6.bro%CC%88llopsfyrverkerier.jpg
 link: '/tjanster'
 ---
 

@@ -10,8 +10,12 @@
   @apply flex flex-wrap justify-between items-start w-full font-display uppercase;
 }
 
+.topics li {
+  @apply w-1/2;
+}
+
 .topics li a {
-  @apply flex flex-col justify-center items-center w-1/2 mb-8 text-sm text-center;
+  @apply flex flex-col justify-center items-center mb-8 text-sm text-center;
 }
 
 .topics .icon {
@@ -20,7 +24,7 @@
 
 @screen sm {
   .topics li {
-    @apply w-auto mb-0 text-base;
+    @apply w-1/4 mb-0 text-base;
   }
 }
 

@@ -6,7 +6,7 @@ video: 'v1566300899/ia-event/W-ia-events-1080.mp4'
 link: '/om'
 ---
 
-Jag som driver Wedding by ia event heter Izabelle Andersson och är utbildad
+Jag som driver Wedding by ia event heter Izabelle Andersson och har arbetat som
 Event Manager sedan 2012. Utöver min roll som koordinator och kreatör är jag i
 livet mamma till en sprallig dotter, fru till mitt livs kärlek, skärgårdsbo och
 hobbykonstnär. Jag tar gärna chansen att åka upp till fjällen för skidåkning och
