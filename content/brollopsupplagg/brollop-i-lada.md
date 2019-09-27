@@ -20,16 +20,28 @@ medier de senaste åren och vet ni vad, jag tröttnar inte. Hör ni också till 
 som smälter över vackra, stora och pampiga lador där kreatören kan få gå loss
 och skapa en stämningsfull kväll med kärlek i fokus. Vad sägs om det här:
 
-{{< image-section src="v1568667490/ia-event/lada-01.jpg" order="order-first" >}}
 Vi har tagit oss ut på landet och storstadspuls har byts ut mot lugn och
 harmoni. Ni har efter en förmiddag av pirr och förberedelser börjat ta er mot
 kyrkan, en vacker gammal kyrka som andas historia. Klockorna ringer och det är
 dags. Låten som ger er båda gåshud börjar spelas och kyrkdörrana öppnas,
 gästerna ställer sig upp. Denna stund är både häftig, skrämmande och helt
-sagolik. Ni kommer minnas den resten av ert liv.{{< /image-section >}}
+sagolik. Ni kommer minnas den resten av ert liv.
 
 Efter vigsel, riskastning och kramar tar ni er vidare mot fotografering ute i
 den vackra naturen och gästerna transporteras mot ladan där mingel väntas.
+
+{{< carousel >}}
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-01.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-02.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-03.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-04.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-05.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-06.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-07.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-08.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-09.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-10.jpg)
+{{< /carousel >}}
 
 Under tiden som en mindre orkester står för underhållningen och får sällskapet i
 stämning så serveras förrätten i form av snittar och minihamburgare genom en

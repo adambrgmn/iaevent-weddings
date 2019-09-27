@@ -1,0 +1,66 @@
+.content-carousel {
+}
+
+.content-carousel .slick-track {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-carousel .slick-slide {
+  @apply px-8;
+}
+
+.content-carousel img {
+  @apply object-center object-cover w-full;
+}
+
+.slick-slider {
+  @apply relative;
+}
+
+.slick-list {}
+
+.slick-arrow {
+  @apply sr-only;
+}
+
+.slick-prev {}
+
+.slick-next {}
+
+.slick-dots {
+  @apply absolute flex justify-around w-full max-w-2xl px-4;
+  top: calc(100% + theme('spacing.4'));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots > li {}
+.slick-dots > li > button {
+  position: relative;
+  display: block;
+  width: theme('spacing.4');
+  height: theme('spacing.4');
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.slick-dots > li > button::before {
+  position: absolute;
+  content: '';
+  width: theme('spacing.2');
+  height: theme('spacing.2');
+  top: calc(50% - (theme('spacing.2') / 2));
+  left: calc(50% - (theme('spacing.2') / 2));
+  border-radius: 100%;
+  background-color: theme('colors.gray.600');
+  transition: background 0.3s ease-in-out;
+}
+
+.slick-dots > li.slick-active > button::before {
+  background-color: theme('colors.white');
+}

@@ -23,14 +23,26 @@ och festlokal ligger i anslutning till varandra. Beroende på antal så finns de
 många möjligheter i vårt vackra land. Exempel på hur en sådan helg kan se ut
 kommer här:
 
-{{< image-section src="v1568663612/ia-event/weekend-01.jpg" order="order-first" >}}
 Vi har funnit det idealiska pensionatet som passar er perfekt. Ni börjar med att
 vara först på plats för att komma i ordning tillsammans med de allra närmaste.
 Under eftermiddagen börjar den ena gästen efter den andra ramla in och vid sen
 eftermiddag samlas ni alla för ett härligt mingel, lekar, god mat och avslappnat
 häng i pensionatets mysiga lokaler. Det är en avslappnad ”hemma hos” känsla och
 ni hinner prata med alla gästerna och dem får i sin tur tid att bekanta sig med
-varandra. En perfekt start.{{< /image-section >}}
+varandra. En perfekt start.
+
+{{< carousel >}}
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-01.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-02.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-03.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-04.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-05.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-06.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-07.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-08.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-09.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-10.jpg)
+{{< /carousel >}}
 
 Andra dagen, dagen D så tar förslagsvis ni en härlig roomservice medans alla
 bröllopsgäster samlas vid en uppdukad frukostbuffé. Dagen rullar på med alla

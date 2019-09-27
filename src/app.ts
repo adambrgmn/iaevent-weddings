@@ -9,12 +9,10 @@ console.log(`${API_BASE}/hello`);
   menu.init();
 
   try {
-    const slideParents = document.querySelectorAll<HTMLElement>(
-      '.simple-slide',
-    );
-    if (slideParents.length > 0) {
-      const simpleSlide = await import('./components/simple-slide');
-      simpleSlide.init(slideParents);
+    const carousels = document.querySelectorAll<HTMLElement>('.carousel');
+    if (carousels.length > 0) {
+      const carousel = await import('./components/carousel');
+      carousel.init(carousels);
     }
   } catch (err) {}
 
