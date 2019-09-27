@@ -34,6 +34,8 @@ ner utrustning efter användning.
 - **Metallringar**, omkrets 60 och 70 cm. För dekor av exempelvis blommor och
   växter
 
+<br /><br />
+
 {{< link-button href="/kontakt" >}} Kontakta oss för bilder på utbud
 {{< /link-button >}}
 

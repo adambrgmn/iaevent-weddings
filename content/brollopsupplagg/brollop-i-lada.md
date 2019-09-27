@@ -15,11 +15,10 @@ images:
   - https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-10.jpg
 ---
 
-Hur många härliga bröllop i charmiga lador (loge) har man inte fått följa i
-sociala medier de senaste åren och vet ni vad, jag tröttnar inte. Hör ni också
-till dem som smälter över vackra, stora och pampiga lador där kreatören kan få
-gå loss och skapa en stämningsfull kväll där kärleken står i fokus. Vad sägs om
-det här:
+Hur många härliga bröllop i charmiga lador har man inte fått följa i sociala
+medier de senaste åren och vet ni vad, jag tröttnar inte. Hör ni också till dem
+som smälter över vackra, stora och pampiga lador där kreatören kan få gå loss
+och skapa en stämningsfull kväll med kärlek i fokus. Vad sägs om det här:
 
 {{< image-section src="v1568667490/ia-event/lada-01.jpg" order="order-first" >}}
 Vi har tagit oss ut på landet och storstadspuls har byts ut mot lugn och
@@ -48,11 +47,11 @@ dag att minnas!
 och mingla vid under hela dagen och kvällen. Bygg upp olika ”rum” med möbler,
 dekoration och gärna ett tema som ”memory lane” där det är fotografier av
 brudparet från barnsben till tonår, när de först började dejta och deras resa
-fram tills idag. Eller varför inte ett klassiskt photobooth.{{< /tip >}}
+fram tills idag.{{< /tip >}}
 
-_I detta förslag vill vi att ni skall få en känsla av hur bröllop i lada kan
-bli. Vi har kontakt med flera härliga lador runt Göteborg och i landet. När det
-kommer till catering så rekommenderar vi mer än gärna BohoBar som vi samarbetar
-med. De står även för en del av ljuvliga bilder ovan.
-[Kontakta Wedding by ia event](/kontakt) för skräddarsytt paket eller
+_I detta förslag vill vi att ni skall få en känsla av hur ett bröllop i lada kan
+se ut. Vi har kontakt med flera härliga lador runt Göteborg och i landet. När
+det kommer till catering så rekommenderar vi mer än gärna BohoBar som vi
+samarbetar med. De står även för en del av de ljuvliga fotona
+ovan. [Kontakta Wedding by ia event](/kontakt) för skräddarsytt paket eller
 samarbete._

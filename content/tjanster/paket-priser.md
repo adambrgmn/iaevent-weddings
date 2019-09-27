@@ -20,13 +20,22 @@ offertförslag.
 
 {{< package-list >}}
 
+{{< package title="Tryck" image="v1568921204/ia-event/save-the-date.jpg" >}}
+Önskar ni hjälp med save the date, inbjudningskort, menyer, namnskyltar eller
+något annat i denna kategori så kan vi hjälpa er med just detta. Vi skapa
+personliga tryck på olika material. Här finns det möjlighet till:
+
+- Att välja någon av våra färdig tryck
+- Skräddarsydd design utefter era önskemål
+
+**Pris på förfrågan** {{< /package >}}
+
 {{< package title="Kickstart" image="v1568921205/ia-event/andrew-knechel-gG6yehL64fo-unsplash.jpg" >}}
 Det går absolut att arrangera sitt bröllops helt på egenhand, troligen har du då
 intresset och tiden att planera er stora dag eller så kanske det inte är möjligt
 rent ekonomiskt att ta in en egen bröllopskoordinator för hela processen. Skulle
 det vara det sistnämnda så vill jag slå ett slag för upplägget ”Kickstart” där
-ni får hjälp och verktyg till att komma igång och känna att du har koll att
-börja er planering utan att det kostar skjortan.
+ni får hjälp och verktyg till att komma igång.
 
 - Konsultationsmöte i 2h. Vi ses alt via Skype
 - Tips och råd utifrån er vision, vi kollar på upplägg och ni får ställa frågor
@@ -42,10 +51,7 @@ processen._ {{< /package >}}
 {{< package title="Koordinering" image="v1568921204/ia-event/andreas-ronningen-S2YssLw97l4-unsplash.jpg" >}}
 Detta upplägg riktar sig till er som känner att ni vill ha hjälp från början
 till slut. Där en koordinator löser det praktiska och har all kontakt med
-leverantörer och blir den som vägleder er i bröllopsdjungeln. Förutom all
-planering inför ert bröllop så organiserar och har vi koll på självaste
-bröllopsdagen så ni kan släppa dessa delarna och bara koncentrera er på att vara
-i nuet, säga Ja :smiley: och ha en fantastisk dag.
+leverantörer och blir den som vägleder er i bröllopsdjungeln.
 
 Vi träffas och jag får veta mer om er som par och era behov och önskningar. En
 budget bestäms och jag sätter därefter igång att ta fram förslag på passande
@@ -78,7 +84,7 @@ om ni löser planeringen själva eller redan har en befintlig bröllopskoordinat
 Vi skapar den design och känsla ni vill åt med hjälp av blommor, färg och form
 just för att förmedla det som ni är ute efter.
 
-- Avstämningsmöten, vi börjar med att går igenom era önskemål, stil och budget
+- Avstämningsmöten, vi börjar med att gå igenom era önskemål, stil och budget
   för det visuella uttrycket
 - Telefon och mailkontakt vid frågor
 - Vi tar fram ert bröllopskoncept med färg och form
@@ -97,20 +103,6 @@ utbud), övriga materialkostnad som skall hyras eller köpas in är ej inkl
 priset och tillkommer efter era val av dekoration, blommor etc. Inget beställs
 utan att det är i samtycke med kund._ {{< /package >}}
 
-{{< package title="Tryck" image="v1568921204/ia-event/save-the-date.jpg" >}} Vi
-Önskar ni hjälp med save the date, inbjudningskort, menyer, namnskyltar eller
-något annat i denna kategori så kan vi hjälpa er med just detta. Vi skapa
-personliga tryck på olika material. Här finns det möjlighet till:
-
-- Att välja någon av våra färdig tryck
-- Skräddarsydd design utefter era önskemål
-
-**Pris på förfrågan** {{< /package >}}
-
 {{< /package-list >}}
 
-<p class="text-center">Hör av er via telefon, mail eller via formuläret här för att beskriva er önskan
-och den hjälp som ni letar efter. Jag återkommer inom en arbetsdag, efter att vi
-pratat ihop oss får ni en offert baserat på era behov.</p>
-
-{{< link-button href="/kontakt" >}} Kontakta oss {{< /link-button >}}
+{{< link-button href="/kontakt" >}} Kontakta oss för offert {{< /link-button >}}
