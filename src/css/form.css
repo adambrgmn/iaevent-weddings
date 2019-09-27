@@ -21,21 +21,21 @@
 }
 
 .input-label-text {
-  @apply mb-1 text-xs opacity-75;
+  @apply mb-1 text-xs text-white opacity-75;
 }
 
 .input {
-  @apply h-8 p-2 text-sm leading-none bg-transparent border-b border-black text-black;
+  @apply h-8 p-2 text-sm leading-none bg-transparent border-b border-white text-white;
   min-width: theme('spacing.20');
 }
 
 .textarea {
-  @apply w-full p-2 text-sm leading-normal bg-transparent border-b border-black text-black;
+  @apply w-full p-2 text-sm leading-normal bg-transparent border-b border-white text-white;
 }
 
 .input:focus,
 .textarea:focus {
-  @apply bg-white;
+  @apply bg-white text-black;
   outline: none;
 }
 

@@ -2,7 +2,7 @@
   <div class="hidden md:block w-1/2">
     <img class="w-full h-full object-cover" src="https://res.cloudinary.com/adambrgmn/image/upload/c_scale,w_650/v1568143938/ia-event/form-image.png" alt="">
   </div>
-  <div class="flex flex-col items-stretch justify-center w-full max-w-2xl md:w-1/2 p-8 bg-tinted">
+  <div class="flex flex-col items-stretch justify-center w-full max-w-2xl md:w-1/2 p-8 bg-black">
     <div>
       <p class="hidden">
         <label>Fyll inte i det här om du är en människa: <input name="bot-field" /></label>
@@ -48,7 +48,7 @@
 
       <div class="input-group">
         <label class="input-label" for="contact-message">
-          <span class="input-label-text">Övriga upplysningar</span>
+          <span class="input-label-text">Vad önskar ni hjälp med?</span>
           <textarea class="textarea" id="contact-message" name="message"></textarea>
         </label>
       </div>
@@ -56,12 +56,12 @@
       <div class="input-group">
         <label class="input-label" for="contact-contact-date">
           <span class="input-label-text">Dag som passar för samtal</span>
-          <input class="input" type="date" id="contact-contact-date" name="contact-date" placeholder="åååå-mm-dd" pattern="\d{4}-\d{2}-\d{2}">
+          <input class="input" type="text" id="contact-contact-date" name="contact-date">
         </label>
       </div>
 
       <div class="input-group justify-center">
-        <button class="submit-button" type="submit">Skicka förfrågan</button>
+        <button class="submit-button inverted" type="submit">Skicka förfrågan</button>
       </div>
     </div>
   </div>
