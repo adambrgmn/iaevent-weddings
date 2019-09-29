@@ -55,16 +55,16 @@ blomvägg, båge, ram eller pelare som med växter, blommor, ballonger eller lju
 skapar en storslagen känsla och markerar er plats under vigselakten.{{< /tip >}}
 
 {{< carousel >}}
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-01.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-02.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-03.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-04.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-05.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-06.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-07.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-08.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-09.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-10.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-01.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-02.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-03.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-04.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-05.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-06.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-07.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-08.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-09.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568663612/ia-event/weekend-10.jpg)
 {{< /carousel >}}
 
 _I detta förslag målar vi upp en bröllopsweekend på fantastiska Pensionat Skäret

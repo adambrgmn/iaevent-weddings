@@ -5,7 +5,7 @@
 {{ define "post-header" }}
   {{ with .Params.backgroundImage }}
     {{ $base := $.Site.Params.cloudinaryBase }}
-    {{ $transformation := "e_auto_brightness,f_auto,c_fill,g_center," }}
+    {{ $transformation := "e_brightness:-15,f_auto,c_fill,g_center," }}
     {{ $src := . }}
     <div
       role="banner"

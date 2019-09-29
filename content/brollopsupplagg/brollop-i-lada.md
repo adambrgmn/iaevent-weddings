@@ -49,16 +49,16 @@ brudparet från barnsben till tonår, när de först började dejta och deras re
 fram tills idag.{{< /tip >}}
 
 {{< carousel >}}
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-01.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-02.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-03.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-04.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-05.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-06.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-07.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-08.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-09.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-10.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-01.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-02.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-03.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-04.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-05.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-06.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-07.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-08.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-09.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1568667490/ia-event/lada-10.jpg)
 {{< /carousel >}}
 
 _I detta förslag vill vi att ni skall få en känsla av hur ett bröllop i lada kan
