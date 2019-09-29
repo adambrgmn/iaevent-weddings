@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .content-carousel {
 }
 
@@ -21,15 +22,18 @@
   @apply relative;
 }
 
-.slick-list {}
+.slick-list {
+}
 
 .slick-arrow {
   @apply sr-only;
 }
 
-.slick-prev {}
+.slick-prev {
+}
 
-.slick-next {}
+.slick-next {
+}
 
 .slick-dots {
   @apply absolute flex justify-around w-full max-w-2xl px-4;
@@ -38,7 +42,8 @@
   transform: translateX(-50%);
 }
 
-.slick-dots > li {}
+.slick-dots > li {
+}
 .slick-dots > li > button {
   position: relative;
   display: block;
@@ -64,3 +69,5 @@
 .slick-dots > li.slick-active > button::before {
   background-color: theme('colors.white');
 }
+
+/*! purgecss end ignore */
