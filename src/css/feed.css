@@ -1,0 +1,9 @@
+.feed-list-item:nth-last-child(-n+2) {
+  display: none;
+}
+
+@screen sm {
+  .feed-list-item:nth-last-child(-n+2) {
+    display: block;
+  }
+}
