@@ -1,7 +1,7 @@
 ---
 title: 'Bröllopsweekend'
 date: 2019-09-16T21:41:31+02:00
-featuredImage: v1568663612/ia-event/weekend-01.jpg
+featuredImage: v1568663612/ia-event/weekend-02.jpg
 images:
   - https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-01.jpg
   - https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-02.jpg
@@ -31,19 +31,6 @@ häng i pensionatets mysiga lokaler. Det är en avslappnad ”hemma hos” käns
 ni hinner prata med alla gästerna och dem får i sin tur tid att bekanta sig med
 varandra. En perfekt start.
 
-{{< carousel >}}
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-01.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-02.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-03.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-04.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-05.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-06.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-07.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-08.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-09.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568663612/ia-event/weekend-10.jpg)
-{{< /carousel >}}
-
 Andra dagen, dagen D så tar förslagsvis ni en härlig roomservice medans alla
 bröllopsgäster samlas vid en uppdukad frukostbuffé. Dagen rullar på med alla
 bröllopsbestyr såsom make, håruppsättning, fotografering och skålande med
@@ -62,6 +49,19 @@ Dagen fortsätter med en lång och härlig bröllopsfest med 3-rätters meny, ta
 avslutas såklart med en riktigt ståtlig bröllopstårta och varför inte dans till
 liveband. Dagen efter ses ni alla nere i frukostlokalen för en härlig brunch och
 paketöppning.
+
+{{< carousel >}}
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-01.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-02.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-03.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-04.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-05.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-06.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-07.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-08.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-09.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-10.jpg)
+{{< /carousel >}}
 
 {{< tip >}}Få hjälp av er designer att skapa en häftig backdrop vid vigseln. En
 blomvägg, båge, ram eller pelare som med växter, blommor, ballonger eller ljus

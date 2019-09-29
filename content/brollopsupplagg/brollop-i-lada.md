@@ -30,19 +30,6 @@ sagolik. Ni kommer minnas den resten av ert liv.
 Efter vigsel, riskastning och kramar tar ni er vidare mot fotografering ute i
 den vackra naturen och gästerna transporteras mot ladan där mingel väntas.
 
-{{< carousel >}}
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-01.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-02.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-03.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-04.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-05.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-06.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-07.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-08.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-09.jpg)
-![](https://res.cloudinary.com/adambrgmn/image/upload/v1568667490/ia-event/lada-10.jpg)
-{{< /carousel >}}
-
 Under tiden som en mindre orkester står för underhållningen och får sällskapet i
 stämning så serveras förrätten i form av snittar och minihamburgare genom en
 förtjusande foodtruck som står parkerad utanför ladans entré. Stämningen är så
@@ -54,6 +41,19 @@ tyger och hundratals ljusslingor slår ni er ner med alla ni håller kär för e
 lång och härlig kväll. Toastmastern håller låda, den ena konfettibomben och
 dansande-på-stolen gästen avlöser varandra och festen är ett faktum. Det är en
 dag att minnas!
+
+{{< carousel >}}
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-01.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-02.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-03.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-04.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-05.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-06.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-07.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-08.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-09.jpg)
+![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-10.jpg)
+{{< /carousel >}}
 
 {{< tip >}}Satsa på att ha olika stationer/loungmiljöer där gästerna kan hänga
 och mingla vid under hela dagen och kvällen. Bygg upp olika ”rum” med möbler,

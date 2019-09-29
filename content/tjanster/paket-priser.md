@@ -51,27 +51,22 @@ processen._ {{< /package >}}
 {{< package title="Koordinering" image="v1568921204/ia-event/andreas-ronningen-S2YssLw97l4-unsplash.jpg" >}}
 Detta upplägg riktar sig till er som känner att ni vill ha hjälp från början
 till slut. Där en koordinator löser det praktiska och har all kontakt med
-leverantörer och blir den som vägleder er i bröllopsdjungeln.
-
-Vi träffas och jag får veta mer om er som par och era behov och önskningar. En
-budget bestäms och jag sätter därefter igång att ta fram förslag på passande
-leverantörer och bokar efter era val upp dem som passar er bäst. Under resans
-gång har ni tillgång till verktyg som ger er en överblick över budget och
-checklista över hela processen. Vi strukturerar upp en skräddarsydd plan och det
-blir tydligt för er över vad jag kommer leverera under vägen och om de punkter
-ni själva skall lägga tid och kraft på, så som att finna den rätta klänningen,
-ringen eller fundera över bröllopsresan.
+leverantörer och blir den som vägleder er i bröllopsdjungeln. Vi strukturerar
+upp en skräddarsydd plan och det blir tydligt för er över vad Wedding by ia
+event kommer leverera under vägen och om de punkter ni själva skall lägga tid
+och kraft på, så som att finna den rätta klänningen, ringen eller fundera över
+bröllopsresan.
 
 - Flera avstämningsmöten, vi börjar med att gå igenom, budget, upplägg och er
   vision av den stora dagen
+- Skräddarsydd planering
 - Telefon och mailkontakt vid frågor
 - Ni får förslag på lokaler, vigselplats och passande leverantörer
 - Vi besöker festlokalen tillsammans
 - Jag bokar upp och har kontakt med de stora leverantörerna så som lokal,
-  vigselplats, florist, catering, fotograf m.fl.
-
-- Provsmakning av meny och bröllopstårta
-- Verktyg som bla checklista och budgetmall
+  florist, catering, fotograf m.fl.
+- Bokning av provsmakning av meny och bröllopstårta
+- Verktyg som bl.a. checklista och budgetmall
 - Tidschema för bröllopshelgen/dagen
 - Er bröllopskoordinator finns på plats under bröllopsdagen och ser till att
   allt går enligt plan och att alla leverantörer håller schema.

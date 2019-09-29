@@ -40,8 +40,8 @@
     <ul class="flex flex-row">
       {{ range $key, $profile := $.Site.Social }}
         <li class="mr-4">
-          <a href="https://www.{{ $key }}.com/{{ $profile }}" class="hover:text-gray-500">
-            <span class="icon baseline {{ cond (eq $key "pinterest") "use-fill" "" }}">{{ partial "site/icons.svg" $key }}</span>
+          <a href="https://www.{{ $key }}.com/{{ $profile }}" target="_blank" rel="noopener noreferrer" class="hover:text-gray-500">
+            <span class="icon baseline {{ cond (eq $key "instagram") "" "use-fill" }}">{{ partial "site/icons.svg" $key }}</span>
             <span class="sr-only">@{{ $profile }} på {{ $key }}</span>
           </a>
         </li>

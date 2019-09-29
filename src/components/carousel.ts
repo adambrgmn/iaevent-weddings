@@ -9,7 +9,7 @@ export function init(parents: NodeListOf<HTMLElement>) {
     const slidesToShow = JSON.parse(el.dataset.show || '1');
 
     const carousel = $(el).slick({
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       lazyLoad: 'ondemand',
       slidesToShow,
