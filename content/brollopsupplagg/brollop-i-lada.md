@@ -42,6 +42,12 @@ lång och härlig kväll. Toastmastern håller låda, den ena konfettibomben och
 dansande-på-stolen gästen avlöser varandra och festen är ett faktum. Det är en
 dag att minnas!
 
+{{< tip >}}Satsa på att ha olika stationer/loungmiljöer där gästerna kan hänga
+och mingla vid under hela dagen och kvällen. Bygg upp olika ”rum” med möbler,
+dekoration och gärna ett tema som ”memory lane” där det är fotografier av
+brudparet från barnsben till tonår, när de först började dejta och deras resa
+fram tills idag.{{< /tip >}}
+
 {{< carousel >}}
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-01.jpg)
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-02.jpg)
@@ -54,12 +60,6 @@ dag att minnas!
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-09.jpg)
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568667490/ia-event/lada-10.jpg)
 {{< /carousel >}}
-
-{{< tip >}}Satsa på att ha olika stationer/loungmiljöer där gästerna kan hänga
-och mingla vid under hela dagen och kvällen. Bygg upp olika ”rum” med möbler,
-dekoration och gärna ett tema som ”memory lane” där det är fotografier av
-brudparet från barnsben till tonår, när de först började dejta och deras resa
-fram tills idag.{{< /tip >}}
 
 _I detta förslag vill vi att ni skall få en känsla av hur ett bröllop i lada kan
 se ut. Vi har kontakt med flera härliga lador runt Göteborg och i landet. När

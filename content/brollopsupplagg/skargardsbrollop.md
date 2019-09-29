@@ -34,6 +34,12 @@ Efter tal, skratt, underhållning och dans så närmar sig kvällen sitt slut. N
 traskar hand i hand till er bröllopsövernattning på ön och sover gott som
 nygifta. Gästerna hoppar på en båt mot fastlandet.
 
+{{< tip >}}En lång dag och kväll kräver mål flera gånger om. Inte att förglömma
+är den väldigt uppskattade ”nattamaten” eller vickning som det så fint heter.
+Kan varmt rekommendera kebabrullen som gästerna kan hugga med sig på båtturen
+hem för att stilla sin hunger. Det sätter pricken över i:et och garanterat något
+de kommer komma ihåg, jag lovar!{{< /tip >}}
+
 {{< carousel >}}
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1569615729/ia-event/1.St-Erik_skargard_KH.jpg)
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1569615734/ia-event/2.isbolaget-brollop2016-11.jpg)
@@ -47,16 +53,10 @@ nygifta. Gästerna hoppar på en båt mot fastlandet.
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1569615737/ia-event/10.knarrholmen-bro%CC%88llop.jpg)
 {{< /carousel >}}
 
-{{< tip >}}En lång dag och kväll kräver mål flera gånger om. Inte att förglömma
-är den väldigt uppskattade ”nattamaten” eller vickning som det så fint heter.
-Kan varmt rekommendera kebabrullen som gästerna kan hugga med sig på båtturen
-hem för att stilla sin hunger. Det sätter pricken över i:et och garanterat något
-de kommer komma ihåg, jag lovar!{{< /tip >}}
-
-_I detta förslag har vi med en vigsel på en av Strömmas båtar, en leverantör som
+_I detta förslag har vi med en vigsel på en av Strömmas båtar, en leverantör som
 är erfarna av att arrangera olika former av event på havet. Vi bygger även upp
-en bröllopsfest som skulle kunna utgå både från gemytliga Isbolaget på Donsö
-eller stiliga restaurang Knarrholmen. Alla dessa härliga aktörer är några vi
-gärna samarbetar med vid bröllop och event.
-[Kontakta Wedding by ia event](/kontakt) för skräddarsytt paket eller
+en bröllopsfest som skulle kunna utgå både från gemytliga Isbolaget på Donsö
+eller stiliga restaurang Knarrholmen. Alla dessa härliga aktörer är några vi
+gärna samarbetar med vid bröllop och
+event. [Kontakta Wedding by ia event](/kontakt) för skräddarsytt paket eller
 samarbete._

@@ -50,6 +50,10 @@ avslutas såklart med en riktigt ståtlig bröllopstårta och varför inte dans 
 liveband. Dagen efter ses ni alla nere i frukostlokalen för en härlig brunch och
 paketöppning.
 
+{{< tip >}}Få hjälp av er designer att skapa en häftig backdrop vid vigseln. En
+blomvägg, båge, ram eller pelare som med växter, blommor, ballonger eller ljus
+skapar en storslagen känsla och markerar er plats under vigselakten.{{< /tip >}}
+
 {{< carousel >}}
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-01.jpg)
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-02.jpg)
@@ -62,10 +66,6 @@ paketöppning.
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-09.jpg)
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,w_400,h_250/v1568663612/ia-event/weekend-10.jpg)
 {{< /carousel >}}
-
-{{< tip >}}Få hjälp av er designer att skapa en häftig backdrop vid vigseln. En
-blomvägg, båge, ram eller pelare som med växter, blommor, ballonger eller ljus
-skapar en storslagen känsla och markerar er plats under vigselakten.{{< /tip >}}
 
 _I detta förslag målar vi upp en bröllopsweekend på fantastiska Pensionat Skäret
 på Styrsö utanför Göteborg. En härlig samarbetspartner som vi gärna bokar.
