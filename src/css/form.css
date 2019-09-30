@@ -25,12 +25,12 @@
 }
 
 .input {
-  @apply h-8 p-2 text-sm leading-none bg-transparent border-b border-white text-white;
+  @apply h-8 p-2 text-sm leading-none bg-transparent border-b border-white text-white rounded-none;
   min-width: theme('spacing.20');
 }
 
 .textarea {
-  @apply w-full p-2 text-sm leading-normal bg-transparent border-b border-white text-white;
+  @apply w-full p-2 text-sm leading-normal bg-transparent border-b border-white text-white rounded-none;
 }
 
 .input:focus,
