@@ -41,6 +41,11 @@ googleAnalytics = "UA-146122952-1"
   instagram = "weddingbyiaevent"
   pinterest = "weddingbyiaevent"
 
+[params.redirects]
+  "https://wedding-by-iaevent.netlify.com/*" = "https://wedding.iaevent.se/:splat"
+  "https://www.iaevent.se/*" = "https://wedding.iaevent.se/:splat"
+  "https://iaevent.se/*" = "https://wedding.iaevent.se/:splat"
+
 # add redirects/headers
 [outputs]
   home = ["HTML", "REDIRECTS", "HEADERS"]
