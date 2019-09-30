@@ -38,4 +38,12 @@ console.log(`${API_BASE}/hello`);
       init(testimonials);
     }
   } catch (error) {}
+
+  try {
+    const formEl = document.querySelectorAll('form');
+    if (formEl.length > 0) {
+      const forms = await import('./components/form');
+      formEl.forEach(forms.init);
+    }
+  } catch (error) {}
 })();

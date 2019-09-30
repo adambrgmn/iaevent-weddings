@@ -5,6 +5,7 @@ module.exports = {
         black: '#333333',
         white: '#ffffff',
         tinted: '#e6e6e6',
+        error: '#ff4e4e',
         gray: {
           '100': '#f5f5f5',
           '200': '#eeeeee',

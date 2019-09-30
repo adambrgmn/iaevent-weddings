@@ -39,6 +39,10 @@
   outline: none;
 }
 
+.input.touched:invalid {
+  @apply border-error;
+}
+
 .submit-button {
   @apply border-2 border-black p-2 text-sm bg-white no-underline self-center;
   transform: translateY(0px);
