@@ -1,5 +1,5 @@
 [build]
-  command = "NODE_ENV=production yarn build:assets && yarn build:hugo -b $URL && yarn build:functions && ls -al public"
+  command = "NODE_ENV=production yarn build:assets && yarn build:hugo -b $URL && yarn build:functions"
   publish = "public"
   functions = "functions"
 
