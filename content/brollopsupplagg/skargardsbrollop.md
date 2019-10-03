@@ -34,11 +34,7 @@ Efter tal, skratt, underhållning och dans så närmar sig kvällen sitt slut. N
 traskar hand i hand till er bröllopsövernattning på ön och sover gott som
 nygifta. Gästerna hoppar på en båt mot fastlandet.
 
-{{< tip >}}En lång dag och kväll kräver mål flera gånger om. Inte att förglömma
-är den väldigt uppskattade ”nattamaten” eller vickning som det så fint heter.
-Kan varmt rekommendera kebabrullen som gästerna kan hugga med sig på båtturen
-hem för att stilla sin hunger. Det sätter pricken över i:et och garanterat något
-de kommer komma ihåg, jag lovar!{{< /tip >}}
+{{< tip >}}En lång dag och kväll kräver mål flera gånger om. Inte att förglömma är den väldigt uppskattade ”nattamaten” eller vickning som det så fint heter. Kan varmt rekommendera kebabrullen inpå småtimmarna. Det sätter pricken över i:et och garanterat något gästerna kommer komma ihåg, jag lovar!{{< /tip >}}
 
 {{< carousel >}}
 ![](https://res.cloudinary.com/adambrgmn/image/upload/f_auto,c_fill,w_400,h_250/v1569615729/ia-event/1.St-Erik_skargard_KH.jpg)
