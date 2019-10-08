@@ -37,7 +37,9 @@ ni får hjälp och verktyg till att komma igång.
 - Vi tipsar om leverantörer inom branschen i Göteborgsområdet att själva
   kontakta.
 
-**Pris: 2 500kr**
+**Pris: 2 500kr**  \*
+
+\* _Det går givetvis att boka på fler tjänster om ni önskar detta närsomhelst i processen._
 {{< /package >}}
 
 {{< package title="Koordinering" image="v1568921204/ia-event/andreas-ronningen-S2YssLw97l4-unsplash.jpg" >}}
