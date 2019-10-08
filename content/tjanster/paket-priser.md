@@ -10,13 +10,7 @@ images:
   - https://res.cloudinary.com/adambrgmn/image/upload/v1568921204/ia-event/andreas-ronningen-S2YssLw97l4-unsplash.jpg
 ---
 
-Följande bröllopspaket är exempel på hur olika design och koordinationspaket kan
-se ut och i vilken ungefärlig prisklass de kan ligga inom. Notera att det är
-svårt att ge ett pris innan vi går in på detaljer. Jag skräddarsyr alltid efter
-kund och deras specifika önskemål. Beroende på arrangemangets storlek, i vilken
-utsträckning man önskar hjälp och hur långt tid planeringen/stylingen förväntas
-tas lägger grunden för det faktiska paketpriset och upplägget som ni får i ert
-offertförslag.
+Följande bröllopspaket är exempel på vad olika design och koordinationspaket kan innehålla. Det är svårt att ge ett pris innan vi går in på detaljer. Jag skräddarsyr alltid efter kund och deras specifika önskemål. Beroende på arrangemangets storlek, i vilken utsträckning man önskar hjälp och hur långt tid planeringen/stylingen förväntas tas lägger grunden för det faktiska paketpriset och upplägget som ni får i ert offertförslag.
 
 {{< package-list >}}
 
@@ -71,7 +65,7 @@ bröllopsresan.
 - Er bröllopskoordinator finns på plats under bröllopsdagen och ser till att
   allt går enligt plan och att alla leverantörer håller schema.
 
-**Pris: fr 25.000kr**{{< /package >}}
+**Pris på förfrågan**{{< /package >}}
 
 {{< package title="Design" image="v1568921205/ia-event/sweet-ice-cream-photography-SurmPrJ4Rts-unsplash.jpg" >}}
 Kombinera bröllopsdesign med vårt paket koordinering eller boka på den separat
@@ -91,7 +85,7 @@ just för att förmedla det som ni är ute efter.
 - Sista styling på bröllopsdagen
 - Nedmontering av ev backdrop, blommstervägg etc dagen efter
 
-**Pris fr 10.000kr** \*
+**Pris på förfrågan** \*
 
 _\* Endast bröllopsdesign och styling (samt tillgång till vårt
 utbud), övriga materialkostnad som skall hyras eller köpas in är ej inkluderat i
