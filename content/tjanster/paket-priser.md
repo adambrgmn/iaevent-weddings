@@ -37,10 +37,8 @@ ni får hjälp och verktyg till att komma igång.
 - Vi tipsar om leverantörer inom branschen i Göteborgsområdet att själva
   kontakta.
 
-**Pris: 2 500kr** \*
-
-\* _Det går givetvis att boka på fler tjänster om ni önskar detta närsomhelst i
-processen._ {{< /package >}}
+**Pris: 2 500kr**
+{{< /package >}}
 
 {{< package title="Koordinering" image="v1568921204/ia-event/andreas-ronningen-S2YssLw97l4-unsplash.jpg" >}}
 Detta upplägg riktar sig till er som känner att ni vill ha hjälp från början
@@ -85,12 +83,8 @@ just för att förmedla det som ni är ute efter.
 - Sista styling på bröllopsdagen
 - Nedmontering av ev backdrop, blommstervägg etc dagen efter
 
-**Pris på förfrågan** \*
-
-_\* Endast bröllopsdesign och styling (samt tillgång till vårt
-utbud), övriga materialkostnad som skall hyras eller köpas in är ej inkluderat i
-priset och tillkommer efter era val av dekoration, blommor etc. Inget beställs
-utan att det är i samtycke med kund._ {{< /package >}}
+**Pris på förfrågan**
+{{< /package >}}
 
 {{< /package-list >}}
 
