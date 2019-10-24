@@ -1,7 +1,3 @@
-{{ define "title" }}
-  {{ .Title }}
-{{ end }}
-
 {{ define "post-header" }}
   {{ with .Params.backgroundImage }}
     {{ $base := $.Site.Params.cloudinaryBase }}

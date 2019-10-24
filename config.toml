@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "sv-SE"
-title = "Wedding by ia event"
+title = "Wedding by ia event | Skräddarsyr bröllop & event i Göteborg"
 
 staticDir = ["static", "assets"]
 
@@ -14,7 +14,6 @@ disableAliases = true
 googleAnalytics = "UA-146122952-1"
 
 [params]
-  title = "Wedding by ia event"
   description = "Wedding by ia event arrangerar bröllop runt om i Göteborg och längs med Västkusten, men tar sig an uppdrag i hela Sverige och även utomlands."
   disallowSearchEngines = false # set robots.txt to disallow everything
   googleFonts = [
