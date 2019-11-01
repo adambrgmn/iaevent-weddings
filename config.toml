@@ -35,6 +35,9 @@ googleAnalytics = "UA-146122952-1"
   phone = "076-336 19 88"
   mail = "wedding@iaevent.se"
 
+[params.meta]
+  "p:domain_verify" = "3bd8c153425f880eb6d196f54ee24100"
+
 [social]
   facebook = "weddingbyiaevent"
   instagram = "weddingbyiaevent"
