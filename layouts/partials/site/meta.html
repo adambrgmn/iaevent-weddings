@@ -14,7 +14,7 @@
 
 <!-- Meta tags compiled from key values pairs in config.toml params.meta -->
 {{ range $key, $value := .Site.Params.meta }}
-  <meta name="{{ $key }}" value="{{ $value }}" />
+  <meta name="{{ $key }}" content="{{ $value }}" />
 {{ end }}
 
 <!-- Hugo info -->
