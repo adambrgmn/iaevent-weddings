@@ -12,11 +12,7 @@ images:
   - https://res.cloudinary.com/adambrgmn/image/upload/v1569622294/ia-event/Ballonggirlang.jpg
 ---
 
-Vårt utbud utökas hela tiden och wedding by ia event erbjuder sitt dekorlager
-utan extra kostnad till er som bokar in oss vid bröllopsdesign eller styling,
-inget hyrs ut separat. Bokning och önskemål om användning av vårt lager görs
-tillsammans med wedding by ia event som även levererar, sätter upp och monterar
-ner utrustning efter användning.
+Vårt utbud utökas hela tiden och finns för uthyrning till er som bokar in oss vid koordinering, bröllopsdesign eller styling.  Wedding by ia event levererar, sätter upp och monterar ner utrustning efter användning.
 
 {{< image-section src="v1568316350/ia-event/Bro%CC%88llopsdetaljer.jpg" >}}
 
@@ -38,7 +34,6 @@ ner utrustning efter användning.
 - **Metallringar**, omkrets 60 och 70 cm. För dekor av exempelvis blommor och
   växter
 
-<br><br> {{< link-button href="/kontakt" >}} Kontakta oss för bilder på
-utbud{{< /link-button >}}
+<br><br> {{< link-button href="/kontakt" >}}Kontakta oss för bilder och pris{{< /link-button >}}
 
 {{< /image-section >}}
